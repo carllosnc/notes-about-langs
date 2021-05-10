@@ -1,0 +1,50 @@
+/*
+---------------------------------------
+VARIABLES
+---------------------------------------
+*/
+
+/* The main namescape */
+:root{
+  --background-color: grey;
+  --font-color: black;
+  --border-color: grey;
+  --border-radius: 5px;
+  --font-weight: normal;
+}
+
+.style1{
+  --background-color: red;
+  --font-color: white;
+  --border-color: black;
+  --border-radius: 30px;
+  --font-weight: bold;
+}
+
+.style2{
+  --background-color: blue;
+  --font-color: yellow;
+  --border-color: orange;
+  --border-radius: 0px;
+  --font-weight: normal;
+}
+
+.style3{
+  --background-color: white;
+  --font-color: red;
+  --border-color: blue;
+  --border-radius: 10px;
+  --font-weight: normal;
+}
+
+.element{
+  background-color: var(--background-color);
+  color: var(--font-color);
+  border: solid var(--border-color) 10px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  width: 300px;
+  font-family: sans-serif;
+  font-weight: var(--font-weight);
+  font-size: 18px;
+}

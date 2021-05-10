@@ -1,0 +1,109 @@
+/*
+---------------------------------------
+Links
+---------------------------------------
+*/
+
+a:active{
+  background-color: blue;
+}
+
+a:hover{
+  background-color: red;
+}
+
+a:link{
+  background-color: green;
+}
+
+/*
+---------------------------------------
+Insert / Content
+---------------------------------------
+*/
+
+.content::after{
+  content: "after";
+  background: red;
+  color: white;
+  padding: 4px;
+}
+
+.content::before{
+  content: "before";
+  background: blue;
+  color: white;
+  padding: 4px;
+}
+
+/*
+---------------------------------------
+Inputs
+---------------------------------------
+*/
+
+/* Placeholder */
+input::placeholder{
+  background-color: blueviolet;
+  color: darkorange;
+}
+
+/* Select all checked inputs */
+input:checked{
+  background-color: red;
+}
+
+input:checked{
+  background-color: blue;
+}
+
+input:default{
+  background-color: green;
+}
+
+input:enabled{
+  background-color: pink;
+}
+
+input:focus{
+  background-color: blue;
+}
+
+input:indeterminate{
+  background-color: lime;
+}
+
+/* Range */
+input:in-range{
+  background-color: tomato;
+}
+
+input:out-of-range{
+  background-color: chartreuse;
+}
+
+/* Selects input elements with no "required" attribute */
+input:optional{
+  background-color: orangered
+}
+
+input:read-only{
+  background-color: darkturquoise;
+}
+
+input:read-write{
+  background-color: indianred;
+}
+
+input:required{
+  background-color: brown;
+}
+
+/* Validations */
+input:valid{
+  background-color: greenyellow;
+}
+
+input:invalid{
+  background-color: crimson;
+}

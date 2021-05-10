@@ -1,0 +1,25 @@
+/*
+---------------------------------------
+COMBINATORS SELECTORS
+---------------------------------------
+*/
+
+/* Decendent selectors */
+div p {
+  background-color: yellow;
+}
+
+/* Child selectors */
+div > p {
+  background-color: red;
+}
+
+/* Adjacent sibling selector */
+div + p {
+  background-color: blue;
+}
+
+/* General sibling selector */
+div ~ p{
+  background-color: red;
+}

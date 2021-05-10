@@ -1,0 +1,126 @@
+/*
+---------------------------------------
+UNIVERSAL SELECTORS
+---------------------------------------
+*/
+
+* [lang^=en] {
+  color: green;
+}
+
+*.warning {
+  color: red;
+}
+
+*#maincontent {
+  border: 1px solid blue;
+}
+
+.floating {
+  float: left
+}
+
+/* automatically clear the next sibling after a floating element */
+.floating + * {
+  clear: left;
+  color: blue;
+}
+
+/*
+---------------------------------------
+ATTRIBUTE SELECTORS
+---------------------------------------
+*/
+
+/* <a>  elements with a title attribute */
+a[title]{
+  color: purple
+}
+
+/* <a> elements  with an href matching "https://example.org"*/
+a[href="https://example.org"]{
+  color: green;
+}
+
+/* <a> elements with an href contain "example" */
+a[href*="example"]{
+  font-size: 2em;
+}
+
+/* Internal links, beginning with "#" */
+a[href^="#"] {
+  background-color: gold;
+}
+
+/* <a> elements with an href ending ".org" */
+a[href$=".org"] {
+  font-style: italic;
+}
+
+/* <a> elements whose class attribute contains the word "logo" */
+a[class~="logo"] {
+  padding: 2px;
+}
+
+/*
+---------------------------------------
+CLASS SELECTORS
+---------------------------------------
+*/
+
+/* Select class */
+.class1{
+  border: solid red 1px;
+}
+
+/* Select elements with multi classes */
+.class1.class2{
+  border: solid black 1px;
+}
+
+/* Select elements with class */
+h1.class1{
+  color: green;
+  border: solid green 1px;
+}
+
+h1.class1.class2{
+  color: orange;
+  border: solid orange 1px;
+}
+
+/*
+---------------------------------------
+ID SELECTORS
+---------------------------------------
+*/
+
+/* Select */
+#id{
+  color: red;
+  border: solid red 1px;
+}
+
+/* Select element with id */
+h1#title{
+  color: blue;
+  border: solid blue 1px;
+}
+
+/*
+---------------------------------------
+TYPE SELECTORS
+---------------------------------------
+*/
+
+/* Select all <a> elements. */
+a {
+  color: red;
+  border: solid red 1px;
+}
+
+/* Select all <p> elements */
+p{
+  color: blue;
+  border: solid blue 1px;
+}

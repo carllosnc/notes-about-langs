@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Working with react-test-renderer Testing with react-test-renderer 1`] = `
+<section
+  className="wrapper"
+>
+  <h1
+    className="title"
+    id="title1"
+  >
+     First Title 
+  </h1>
+  <h1
+    className="title"
+    id="title2"
+  >
+     Second Title 
+  </h1>
+</section>
+`;
