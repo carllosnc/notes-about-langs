@@ -2,6 +2,7 @@
   Functions
 
   https://www.typescriptlang.org/docs/handbook/classes.html
+  https://kentcdodds.com/blog/typescript-function-syntaxes
 */
 
 /*---------------------------------------

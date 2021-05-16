@@ -55,4 +55,5 @@ Enter on pgcli
 Create database
 ```
   > CREATE DATABASE database_name;
+  > GRANT ALL PRIVILEGES ON DATABASE database_name TO user;
 ```
