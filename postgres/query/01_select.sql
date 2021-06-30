@@ -1,23 +1,9 @@
 -- http://www.postgresqltutorial.com/postgresql-select/
 
--- Select all columns
-SELECT
-  *
-FROM categories;
+use dvdrental;
 
--- Select one column
-SELECT
-  category_name
-FROM categories;
+SELECT * FROM actor;
 
--- Select multiple columns
-SELECT
-  category_id,
-  category_name
-FROM categories;
+SELECT first_name, last_name FROM actor;
 
--- Select with expression example
--- In this example, we used the concatenation operator ||
-SELECT
-  category_id  || '->' || category_name AS full_name
-FROM categories;
+SELECT first_name || ' -> ' || last_name AS full_name, email FROM customer;

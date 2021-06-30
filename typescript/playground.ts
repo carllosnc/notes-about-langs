@@ -1,3 +1,5 @@
-// null safety typescript
+function fn1(arg: any){
+  arg?.foo();
+}
 
-console.log(0 ?? "Hello world!")
+fn1(null)

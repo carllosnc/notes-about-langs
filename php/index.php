@@ -1,17 +1,7 @@
 <?php
 
-trait Fiz{
-  static function fn1(){
-    echo "Fiz trait";
+  class Person {
+    public ?int $intPropertie = null;
   }
-}
 
-trait Bar{
-  use Fiz;
-}
-
-class Foo {
-  use Bar;
-}
-
-Foo::fn1();
+?>
