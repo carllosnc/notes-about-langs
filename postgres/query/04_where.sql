@@ -1,65 +1,36 @@
 -- http://www.postgresqltutorial.com/postgresql-where/
 
 -- Using WHERE clause with the equal (=) operator example
-SELECT
-  *
-FROM
-  products
-WHERE
-  product_id = 10;
+SELECT first_name, last_name
+FROM customer
+WHERE first_name = 'Jamie';
 
 -- Using WHERE clause with the AND operator example
-SELECT
-  *
-FROM
-  products
-WHERE
-  supplier_id = 7
-  AND
-  units_in_stock = 29;
+SELECT first_name, last_name
+FROM customer
+WHERE first_name = 'Jamie' AND last_name = 'Rice';
 
 -- Using WHERE clause with the OR operator example
-SELECT
-  *
-FROM
-  products
-WHERE
-  product_name = 'Chai'
-  OR
-  product_name = 'Chang';
+SELECT first_name, last_name
+FROM customer
+WHERE last_name = 'Rodriguez' OR first_name = 'Adam';
 
 -- Using WHERE clause with the IN operator example
-SELECT
-  *
-FROM
-  products
-WHERE
-  product_name IN ('Chai', 'Chang', 'Ikura', 'Tofu', 'Konbu');
+SELECT first_name, last_name
+FROM customer
+WHERE first_name IN('Ann', 'Anne', 'Annie');
 
--- Using WHERE clause with the LIKE operator example
-SELECT
-  *
-FROM
-  products
-WHERE
-  product_name LIKE 'Ch%';
+-- Using WHERE clause with LIKE operator example
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE 'Ann%';
 
--- Using WHERE clause with the BETWEEN operator example
-SELECT
-  *
-FROM
-  products
-WHERE
-  unit_price BETWEEN 10.0 AND 50.0
-ORDER BY
-  unit_price ASC;
+-- Using WHERE clause with BETWEEN operator example
+SELECT first_name, LENGTH(first_name) name_lenght
+FROM customer
+WHERE first_name LIKE 'A%' AND LENGTH(first_name) BETWEEN 3 AND 5;
 
--- Using WHERE clause with the not equal operator (<>)(!=) example
-SELECT
-  category_id
-FROM
-  products
-WHERE
-  category_id <> 2
-ORDER BY
-  category_id ASC;
+-- Using the WHERE clause with the not equal operator <> example
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE 'Bra%' AND last_name <> 'Motley';

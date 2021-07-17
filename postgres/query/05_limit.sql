@@ -1,17 +1,25 @@
 -- http://www.postgresqltutorial.com/postgresql-limit/
 
--- PostgreSQL LIMIT is an optional clause of the SELECT statement
--- that returns a subset of rows returned by the query.
-SELECT
-  *
-FROM
-  products
-LIMIT 20;
+-- Using PostgreSQL LIMIT to constrain the number of returned rows example
 
--- In case you want to skip a number of rows before returning the n rows,you use
--- OFFSET clause placed after the LIMIT clause as the following statement:
 SELECT
-  *
+  film_id,
+  title,
+  release_year
 FROM
-  products
-LIMIT 20 OFFSET 29
+  film
+ORDER BY
+  film_id
+LIMIT 5;
+
+--Using OFFSET
+
+SELECT
+  film_id,
+  title,
+  release_year
+FROM
+  film
+ORDER BY
+  film_id
+LIMIT 4 OFFSET 3;
