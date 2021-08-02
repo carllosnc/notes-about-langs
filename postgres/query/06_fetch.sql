@@ -2,18 +2,34 @@
 
 -- retrieve a portion of rows returned by a query.
 
--- only one
+use dvdrental;
+
+-- The following query use the FETCH clause to select the first film sorted by titles in ascending order:
 SELECT
-  *
+  film_id,
+  title
 FROM
-  products
-OFFSET 10
+  film
+ORDER BY
+  title
 FETCH FIRST ROW ONLY;
 
--- multiple
+-- It is equivalent to the following query:
 SELECT
-  *
+  film_id,
+  title
 FROM
-  products
-OFFSET 10
-FETCH FIRST 20 ROW ONLY;
+  film
+ORDER BY
+  title
+FETCH FIRST 1 ROW ONLY;
+
+-- Another example
+SELECT
+  film_id,
+  title
+FROM
+  film
+ORDER BY
+  title
+FETCH FIRST 10 ROW ONLY;

@@ -1,5 +1,7 @@
 -- http://www.postgresqltutorial.com/postgresql-limit/
 
+use dvdrental;
+
 -- Using PostgreSQL LIMIT to constrain the number of returned rows example
 
 SELECT

@@ -1,5 +1,7 @@
 -- http://www.postgresqltutorial.com/postgresql-order-by/
 
+use dvdrental;
+
 -- Acendenting 0 -> 10
 SELECT first_name, last_name
 FROM customer

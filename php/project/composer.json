@@ -1,0 +1,17 @@
+{
+    "name": "carll/project",
+    "description": "Learning more about php and postgres",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+          "App\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Carlos Costa",
+            "email": "carllos.nc@gmail.com"
+        }
+    ],
+    "require": {}
+}
