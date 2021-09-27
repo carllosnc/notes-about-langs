@@ -89,11 +89,11 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
 {
   let unusable: void = undefined
 
-  function fn(): void {
+  function fn1(): void {
     console.log('returning anything')
   }
 
-  fn()
+  fn1()
 
   console.log(unusable)
 }
@@ -158,16 +158,16 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
   console.log(span)
 }
 
-
 /*---------------------------------------
   Literal types
 ----------------------------------------*/
 
 {
-
   type Animal = "Dog" | "Cat" | "Bird"
-  const bob:Animal = "Dog"
+  const bob: Animal = "Dog"
+  console.log(bob)
 
   type Response = "Yes" | "No" | "Maybe"
   const myResponse: Response = "No"
+  console.log(myResponse)
 }

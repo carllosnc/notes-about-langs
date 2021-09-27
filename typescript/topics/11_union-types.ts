@@ -22,7 +22,7 @@
     if(typeof name == "string") {
       console.log(name)
     }else {
-      let i
+      let i: number
 
       for(i = 0; i<name.length; i++){
         console.log(name [i])

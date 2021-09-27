@@ -1,5 +1,4 @@
-function fn1(arg: any){
-  arg?.foo();
-}
+const foo: string[] = ["first", "seconds"]
+const bar: Array<string> = ["Hello world, this is a simple react element"]
 
-fn1(null)
+

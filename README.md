@@ -1,3 +1,3 @@
-# Notes about X
+# Notes about langs
 
 *Just trying learn something*

@@ -40,6 +40,4 @@
 
   cachable(10)
   cachable(10)
-
 }
-
