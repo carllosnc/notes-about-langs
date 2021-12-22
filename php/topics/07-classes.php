@@ -13,6 +13,8 @@
   - inheritance
 */
 
+declare(strict_types=1);
+
 interface Info {
   public function getInfo();
 }

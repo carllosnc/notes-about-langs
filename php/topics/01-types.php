@@ -5,6 +5,8 @@
   ===================
 */
 
+declare(strict_types=1);
+
 // booleans
 $boolean1 = true;
 $boolean2 = false;

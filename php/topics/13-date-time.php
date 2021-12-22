@@ -5,6 +5,8 @@
   ===================
 */
 
+declare(strict_types=1);
+
 $raw = "22. 11. 1968";
 $start = DateTime::createFromFormat("d. m. Y", $raw);
 

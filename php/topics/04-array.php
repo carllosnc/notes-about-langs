@@ -5,6 +5,8 @@
   ===================
 */
 
+declare(strict_types=1);
+
 // basic array
 $elements = array("primeiro", "segundo", "terceiro");
 

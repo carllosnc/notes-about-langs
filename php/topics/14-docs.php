@@ -5,6 +5,8 @@
   ===================
 */
 
+declare(strict_types=1);
+
 $heredoc = <<<DOC
   first line,
   second line,

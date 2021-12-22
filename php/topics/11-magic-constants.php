@@ -5,6 +5,8 @@
   ===================
 */
 
+declare(strict_types=1);
+
 echo "\nCurrent class name is " . __CLASS__;
 echo "\nCurrent directory is " . __DIR__;
 echo "\nCurrent file path is " . __FILE__;

@@ -5,6 +5,8 @@
   ===================
 */
 
+declare(strict_types=1);
+
 include "../lib/calc.php";
 // include_once "../lib/calc.php";
 // require "../lib.calc.php";

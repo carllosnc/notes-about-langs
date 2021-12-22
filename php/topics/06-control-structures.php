@@ -5,6 +5,8 @@
   ===================
 */
 
+declare(strict_types=1);
+
 // if/else
 if(true){
   echo "condition 1 \n";

@@ -5,6 +5,8 @@
   ===================
 */
 
+declare(strict_types=1);
+
 // string should be enclosed in single quotes
 $single_quotes = '$string'; // => $String
 $double_quotes = "String -> $single_quotes"; // String -> $string

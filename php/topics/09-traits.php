@@ -5,6 +5,8 @@
   ===================
 */
 
+declare(strict_types=1);
+
 trait Base {
   static public $type = "Base Trait";
 
