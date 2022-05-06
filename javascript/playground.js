@@ -1,9 +1,14 @@
-let myPromise = Promise.resolve("Hello world!")
+function makePromise(timer){
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`after ${timer} seconds`)
+    }, timer * 1000);
+  })
+}
 
-myPromise
-.then(result => {
-  return Promise.resolve(result.toUpperCase())
+makePromise(3)
+.then((value) => {
+  console.log(value)
 })
-.then(result => {
-  console.log(result)
-})
+
+console.log('Hello world!')

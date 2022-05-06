@@ -9,7 +9,7 @@
 ----------------------------------------*/
 {
   let value: string | number | boolean
-  value = "hello world"
+  value = 'hello world'
   value = 42
   value = true
 }
@@ -18,14 +18,14 @@
   union type and function parameter
 ----------------------------------------*/
 {
-  function disp(name: string | string[]){
-    if(typeof name == "string") {
+  function disp(name: string | string[]) {
+    if (typeof name == 'string') {
       console.log(name)
-    }else {
+    } else {
       let i: number
 
-      for(i = 0; i<name.length; i++){
-        console.log(name [i])
+      for (i = 0; i < name.length; i++) {
+        console.log(name[i])
       }
     }
   }

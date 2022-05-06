@@ -12,12 +12,12 @@ https://www.typescriptlang.org/docs/handbook/enums.html
     Up = 1, // start
     Down,
     Left,
-    Right
+    Right,
   }
 
   enum Response {
     No = 0,
-    Yes = 1
+    Yes = 1,
   }
 
   let up: Direction = Direction.Up
@@ -32,10 +32,10 @@ https://www.typescriptlang.org/docs/handbook/enums.html
 ----------------------------------------*/
 {
   enum Direction {
-    Up = "UP",
-    Down = "DOWN",
-    Left = "LEFT",
-    Right = "RIGHT"
+    Up = 'UP',
+    Down = 'DOWN',
+    Left = 'LEFT',
+    Right = 'RIGHT',
   }
 
   console.log(Direction.Down)
@@ -47,7 +47,7 @@ https://www.typescriptlang.org/docs/handbook/enums.html
 {
   enum Multi {
     No = 0,
-    Yes = "YES"
+    Yes = 'YES',
   }
 
   console.log(Multi.No)
@@ -58,7 +58,11 @@ https://www.typescriptlang.org/docs/handbook/enums.html
 ----------------------------------------*/
 {
   // All enum members in 'E' are constant.
-  enum E { X, Y, Z }
+  enum E {
+    X,
+    Y,
+    Z,
+  }
 
   console.log(E.X)
   console.log(E.Y)

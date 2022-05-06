@@ -1,10 +1,5 @@
-{
-  type DescribableFunction = {
-    description: string
-    (someArg: number): boolean
-  }
-
-  function doAnything(fn: DescribableFunction){
-    console.log(fn.description + "returned" + fn(6))
-  }
+function fn1<T>(arg: T): T {
+  return arg
 }
+
+fn1<number>(10)

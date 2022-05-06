@@ -11,12 +11,12 @@
   let someArray = [1, 'string', false]
 
   // returning all keys
-  for(let keys in someArray){
+  for (let keys in someArray) {
     console.log(keys)
   }
 
   // returning values
-  for(let values of someArray){
+  for (let values of someArray) {
     console.log(values)
   }
 }
@@ -28,11 +28,11 @@
   let pets = new Set(['Cat', 'Dog', 'Hamster'])
   pets['species'] = 'mammals'
 
-  for(let pet in pets){
+  for (let pet in pets) {
     console.log(pet)
   }
 
-  for(let pet of pets){
+  for (let pet of pets) {
     console.log(pet)
   }
 }

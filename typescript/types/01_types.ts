@@ -25,7 +25,7 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
   string
 ----------------------------------------*/
 {
-  let color: string = "blue"
+  let color: string = 'blue'
   let literal: string = `The color is ${color}`
 }
 
@@ -33,7 +33,7 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
   array
 ----------------------------------------*/
 {
-  let list1: number[]  = [1, 2, 3]
+  let list1: number[] = [1, 2, 3]
   let list2: Array<number> = [1, 2, 3]
 }
 
@@ -48,9 +48,9 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
   y = ['Hello', 'world']
 
   let z: [string, boolean, number]
-  z = ['Hello world', true, 42 ]
+  z = ['Hello world', true, 42]
 
-  let k: [string, number] = ["foo", 10]
+  let k: [string, number] = ['foo', 10]
 
   console.log(x instanceof Array)
   console.log(y instanceof Array)
@@ -61,7 +61,11 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
   enum
 ----------------------------------------*/
 {
-  enum Color {Red, Green, Blue}
+  enum Color {
+    Red,
+    Green,
+    Blue,
+  }
 
   let Red: Color = Color.Red
   let Green: Color = Color.Green
@@ -77,10 +81,10 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
 {
   let notSure: any = 4
   notSure = true
-  notSure = "hello world"
+  notSure = 'hello world'
 
-  let list: any[] = [1, true, "free"]
-  list[1] = "Hello world"
+  let list: any[] = [1, true, 'free']
+  list[1] = 'Hello world'
 }
 
 /*---------------------------------------
@@ -110,12 +114,12 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
   never
 ----------------------------------------*/
 {
-  function error(message: string): never{
+  function error(message: string): never {
     throw new Error(message)
   }
 
-  function fail(): never{
-    return error("Something failed")
+  function fail(): never {
+    return error('Something failed')
   }
 }
 
@@ -137,18 +141,18 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
   type NameOrResolver = Name | NameResolver
   type Multiple = string | number | boolean
   type Object = {
-    first: String,
+    first: String
     second: Number
   }
 
-  const foo: Multiple = "hello world"
+  const foo: Multiple = 'hello world'
   const bar: Multiple = 42
   const span: Multiple = true
 
   function getName(n: NameOrResolver): Name {
-    if(typeof n === 'string'){
+    if (typeof n === 'string') {
       return n
-    }else{
+    } else {
       return n()
     }
   }
@@ -163,11 +167,11 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
 ----------------------------------------*/
 
 {
-  type Animal = "Dog" | "Cat" | "Bird"
-  const bob: Animal = "Dog"
+  type Animal = 'Dog' | 'Cat' | 'Bird'
+  const bob: Animal = 'Dog'
   console.log(bob)
 
-  type Response = "Yes" | "No" | "Maybe"
-  const myResponse: Response = "No"
+  type Response = 'Yes' | 'No' | 'Maybe'
+  const myResponse: Response = 'No'
   console.log(myResponse)
 }

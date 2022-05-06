@@ -12,7 +12,7 @@
 ----------------------------------------*/
 {
   let sym = Symbol()
-  let sym2 =  Symbol('key')
+  let sym2 = Symbol('key')
 
   console.log(sym, sym2)
 }
@@ -35,7 +35,7 @@
   const sym = Symbol()
 
   let obj = {
-    [sym]: "value"
+    [sym]: 'value',
   }
 
   console.log(obj[sym])
@@ -51,8 +51,8 @@
   const getClassNameSymbol = Symbol()
 
   class C {
-    [getClassNameSymbol](){
-      return "C"
+    [getClassNameSymbol]() {
+      return 'C'
     }
   }
 

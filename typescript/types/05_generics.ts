@@ -49,11 +49,11 @@
   generic with interfaces
 ----------------------------------------*/
 {
-  interface GenericIdentityFn<T>{
+  interface GenericIdentityFn<T> {
     <T>(arg: T): T
   }
 
-  function id<T>(arg: T): T{
+  function id<T>(arg: T): T {
     return arg
   }
 
@@ -72,7 +72,9 @@
 
   let myGenericNumber = new GenericNumber<number>()
   myGenericNumber.zeroValue = 0
-  myGenericNumber.add = function (x, y) { return x + y }
+  myGenericNumber.add = function (x, y) {
+    return x + y
+  }
 }
 
 /*---------------------------------------
@@ -80,13 +82,13 @@
 ----------------------------------------*/
 
 {
-  function fn<
-    T extends number | string,
-    K extends boolean
-  >(arg: T, arg2: K): T{
+  function fn<T extends number | string, K extends boolean>(
+    arg: T,
+    arg2: K
+  ): T {
     return arg
   }
 
-  fn("Hello world", true)
+  fn('Hello world', true)
   fn(10, false)
 }

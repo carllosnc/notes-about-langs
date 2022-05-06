@@ -8,18 +8,18 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
   basic interfaces
 ----------------------------------------*/
 {
-  interface People  {
+  interface People {
     name: string
     lang: string
   }
 
-  function getPeople (who: People): People {
+  function getPeople(who: People): People {
     return who
   }
 
-  const bob = getPeople({ name: "Bob", lang: "Typescript"})
+  const bob = getPeople({ name: 'Bob', lang: 'Typescript' })
 
-  console.log (bob)
+  console.log(bob)
 }
 
 /*---------------------------------------
@@ -33,11 +33,11 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
     model?: string // optional
   }
 
-  function getSquare(obj: Square): Square{
+  function getSquare(obj: Square): Square {
     return obj
   }
 
-  const blackSquare = getSquare({ color: "Black", area: 100})
+  const blackSquare = getSquare({ color: 'Black', area: 100 })
 
   console.log(blackSquare)
 }
@@ -51,7 +51,7 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
     readonly y: number
   }
 
-  let origin: Point = { x: 0, y: 0}
+  let origin: Point = { x: 0, y: 0 }
   // origin.x = 10
   // cannot assign to "x" because it is a read-only property
 }
@@ -68,27 +68,26 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
   }
 
   let redSquare: Square = {
-    color: "red",
+    color: 'red',
     opacity: 0.2,
-    "10": "another property"
+    '10': 'another property',
   }
 
   console.log(redSquare as Square)
 }
 
-
 /*---------------------------------------
   function types
 ----------------------------------------*/
 {
-  interface SearchFunc{
+  interface SearchFunc {
     (source: string, subString: string): boolean
   }
 
   let mySearch: SearchFunc
 
-  mySearch = function(source1: string, subString1: string) {
-    return true;
+  mySearch = function (source1: string, subString1: string) {
+    return true
   }
 }
 
@@ -105,16 +104,16 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
   }
 
   let myObject: StringObject = {
-    "1": "first",
-    "2": "second",
-    "3": "third"
+    '1': 'first',
+    '2': 'second',
+    '3': 'third',
   }
 
   let myArray: StringArray
-  myArray = ["Bob", "Fred"]
+  myArray = ['Bob', 'Fred']
 
   console.log(myArray[1])
-  console.log(myObject["1"])
+  console.log(myObject['1'])
 }
 
 /*---------------------------------------
@@ -122,15 +121,15 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
 ----------------------------------------*/
 {
   interface ClockInterface {
-    currentTime: Date,
+    currentTime: Date
     setTime(d: Date): void
   }
 
   class Clock implements ClockInterface {
     currentTime: Date = new Date()
-    constructor(h: number, m: number){}
+    constructor(h: number, m: number) {}
 
-    setTime(d: Date): void{
+    setTime(d: Date): void {
       this.currentTime
     }
   }
@@ -153,7 +152,7 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
   }
 
   let square = <Square>{}
-  square.color = "blue"
+  square.color = 'blue'
   square.sideLength = 10
   square.penWidth = 5.0
 }
@@ -169,9 +168,9 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
   }
 
   function getCounter(): Counter {
-    let counter = <Counter>function (start: number){}
+    let counter = <Counter>function (start: number) {}
     counter.interval = 123
-    counter.reset = function(){}
+    counter.reset = function () {}
 
     return counter
   }
@@ -181,4 +180,3 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
   c.reset()
   c.interval = 5.0
 }
-

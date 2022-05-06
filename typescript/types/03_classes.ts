@@ -11,11 +11,11 @@
   class Greeter {
     greeting: string
 
-    constructor(message: string){
+    constructor(message: string) {
       this.greeting = message
     }
 
-    greet(){
+    greet() {
       return `hello ${this.greeting}`
     }
   }
@@ -26,25 +26,24 @@
   console.log(greeter instanceof Greeter)
 }
 
-
 /*---------------------------------------
   inheritance
 ----------------------------------------*/
 {
-  class Person{
+  class Person {
     private name: string
     private age: number
 
-    constructor(name: string, age: number){
+    constructor(name: string, age: number) {
       this.name = name
       this.age = age
     }
 
-    getName(){
+    getName() {
       return this.name
     }
 
-    getAge(){
+    getAge() {
       return this.age
     }
   }
@@ -52,12 +51,12 @@
   class Programmer extends Person {
     private lang: string
 
-    constructor(name: string, age: number, lang: string){
+    constructor(name: string, age: number, lang: string) {
       super(name, age)
       this.lang = lang
     }
 
-    getLang(){
+    getLang() {
       return this.lang
     }
   }
@@ -74,14 +73,14 @@
 ----------------------------------------*/
 {
   class Foo {
-    method(){
-      return "foo method"
+    method() {
+      return 'foo method'
     }
   }
 
   class Bar extends Foo {
-    method(){
-      return " overrided by Bar"
+    method() {
+      return ' overrided by Bar'
     }
   }
 
@@ -96,7 +95,7 @@
   class Person {
     private _name: string
 
-    constructor(name: string){
+    constructor(name: string) {
       this._name = name
     }
 
@@ -111,7 +110,7 @@
 
   let john = new Person('john')
   console.log(john.name)
-  john.name = "John Doe"
+  john.name = 'John Doe'
   console.log(john.name)
 }
 
@@ -124,7 +123,7 @@
     public lastName: string
     protected age: number
 
-    constructor(name: string, lastName: string, age: number){
+    constructor(name: string, lastName: string, age: number) {
       this._name = name
       this.lastName = lastName
       this.age = age
@@ -132,11 +131,11 @@
   }
 
   class Programmer extends Person {
-    constructor(name: string, lastName: string, age: number){
+    constructor(name: string, lastName: string, age: number) {
       super(name, lastName, age)
     }
 
-    getAge(){
+    getAge() {
       return this.age
     }
   }
@@ -153,7 +152,7 @@
     readonly name: string
     readonly numberOfLegs: number = 8
 
-    constructor (name: string){
+    constructor(name: string) {
       this.name = name
     }
   }
@@ -168,9 +167,9 @@
 ----------------------------------------*/
 {
   class Foo {
-    static propertie: string = "class propertie"
+    static propertie: string = 'class propertie'
     static method(): string {
-      return "method propertie"
+      return 'method propertie'
     }
   }
 
@@ -186,18 +185,18 @@
     abstract makeSound(): void
 
     move(): void {
-      console.log("Roaming the earth")
+      console.log('Roaming the earth')
     }
   }
 
   class Cat extends Animal {
-    makeSound(){
+    makeSound() {
       console.log('Meow!')
     }
   }
 
   class Dog extends Animal {
-    makeSound(){
+    makeSound() {
       console.log('Auu! Auu!')
     }
   }

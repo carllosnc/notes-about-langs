@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "lib": ["es2015", "DOM"],
-    "downlevelIteration": true,
-    "experimentalDecorators": true
+    "target": "ES2018",
+    "module": "commonjs",
+    "lib": [
+      "esnext",
+      "DOM"
+    ],
+    "strict": true,
+    "rootDir": ".",
+    "outDir": "dist",
+    "sourceMap": true,
+    "esModuleInterop": true
   }
 }

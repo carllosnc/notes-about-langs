@@ -31,7 +31,7 @@ https://www.typescriptlang.org/docs/handbook/type-compatibility.html
   }
 
   let x: Named
-  let y = { name: 'Alice', location: 'Seatle'}
+  let y = { name: 'Alice', location: 'Seatle' }
 
   x = y
 }
@@ -51,8 +51,15 @@ https://www.typescriptlang.org/docs/handbook/type-compatibility.html
   enum
 ----------------------------------------*/
 {
-  enum Status { Ready, Waiting }
-  enum Color { Red, Blue, Green }
+  enum Status {
+    Ready,
+    Waiting,
+  }
+  enum Color {
+    Red,
+    Blue,
+    Green,
+  }
 
   let status = Status.Ready
   //status = Color.Green - error
@@ -64,12 +71,12 @@ https://www.typescriptlang.org/docs/handbook/type-compatibility.html
 {
   class Animal {
     feet: number
-    constructor(name: string, numFeet: number){}
+    constructor(name: string, numFeet: number) {}
   }
 
   class Size {
     feet: number
-    constructor(numFeet: number){}
+    constructor(numFeet: number) {}
   }
 
   let a: Animal

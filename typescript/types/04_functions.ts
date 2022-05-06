@@ -9,7 +9,7 @@
   named functions
 ----------------------------------------*/
 {
-  function add(x: number, y: number): number{
+  function add(x: number, y: number): number {
     return x + y
   }
 }
@@ -18,7 +18,7 @@
   anonymous functions
 ----------------------------------------*/
 {
-  let add = function(x: number, y: number): number{
+  let add = function (x: number, y: number): number {
     return x + y
   }
 }
@@ -27,7 +27,7 @@
   optional and default parameters
 ----------------------------------------*/
 {
-  function buildName(firstName: string = 'John', lastName?: string){
+  function buildName(firstName: string = 'John', lastName?: string) {
     return `${firstName} ${lastName || ''}`
   }
 
@@ -39,7 +39,7 @@
   rest parameters
 ----------------------------------------*/
 {
-  function sum(...values): number{
+  function sum(...values): number {
     return values.reduce((total, num) => total + num)
   }
 
@@ -51,15 +51,14 @@
   expression (IIFE)
 ----------------------------------------*/
 {
-  (arg => {
+  ;(arg => {
     console.log(arg)
-  })('Hello world');
+  })('Hello world')
 
-  (function(arg){
+  ;(function (arg) {
     console.log(arg)
-  })('Hello world!!!');
+  })('Hello world!!!')
 }
-
 
 {
   type DescribableFunction = {
@@ -67,7 +66,7 @@
     (someArg: number): boolean
   }
 
-  function doSomething(fn: DescribableFunction){
-    console.log(fn.description + " returned " + fn(6))
+  function doSomething(fn: DescribableFunction) {
+    console.log(fn.description + ' returned ' + fn(6))
   }
 }
