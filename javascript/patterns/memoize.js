@@ -7,10 +7,10 @@
 */
 
 {
-  const memo = (function(){
+  const memo = (function () {
     let save = []
 
-    return function(value){
+    return function (value) {
       save.push(value)
 
       return save
@@ -23,16 +23,16 @@
 }
 
 {
-  const cachable = (function (){
+  const cachable = (function () {
     let cache = null
 
-    return function(value){
-      if(cache){
-        console.log("Returning cache - ", value)
+    return function (value) {
+      if (cache) {
+        console.log('Returning cache - ', value)
         return cache
       }
 
-      console.log("Cache off")
+      console.log('Cache off')
       cache = value
       return value
     }

@@ -1,5 +1,4 @@
-function fn1<T>(arg: T): T {
-  return arg
-}
+type Point = { x: number; y: string }
+type P = keyof Point
 
-fn1<number>(10)
+const foo: P = 'y'

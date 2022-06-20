@@ -6,10 +6,10 @@
 // two ways of thinking
 {
   // first
-  function pow1(x, n){
+  function pow1(x, n) {
     let result = 1
 
-    for(let i = 0; i < n; i++){
+    for (let i = 0; i < n; i++) {
       result *= x
     }
 
@@ -19,8 +19,8 @@
   console.log(pow1(2, 3)) // 8
 
   // second (recursion)
-  function pow2(x, n){
-    if(n == 1) return x
+  function pow2(x, n) {
+    if (n == 1) return x
 
     return x * pow2(x, n - 1)
   }
@@ -30,13 +30,13 @@
 
 // Loop method
 {
-  function loop(start, end, action){
-    if(start === end){
+  function loop(start, end, action) {
+    if (start === end) {
       return false
     }
 
-    if(start > end) loop(start - 1, end, action)
-    if(start < end) loop(start + 1, end, action)
+    if (start > end) loop(start - 1, end, action)
+    if (start < end) loop(start + 1, end, action)
 
     action(start)
   }

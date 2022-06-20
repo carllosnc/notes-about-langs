@@ -16,21 +16,21 @@
 
 // hidden properties
 {
-  let user = { name: "John"}
-  let id = Symbol("id")
+  let user = { name: 'John' }
+  let id = Symbol('id')
 
-  user[id] = "ID value"
+  user[id] = 'ID value'
 
   console.log(user[id])
 }
 
 // Symbols in a literal
 {
-  let id = Symbol("id")
+  let id = Symbol('id')
 
   let user = {
-    name: "John",
-    [id]: 123
+    name: 'John',
+    [id]: 123,
   }
 
   console.log(user[id])

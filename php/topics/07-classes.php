@@ -15,74 +15,82 @@
 
 declare(strict_types=1);
 
-interface Info {
-  public function getInfo();
+interface Info
+{
+    public function getInfo();
 }
 
-class Master {
-  private $address;
+class Master
+{
+    private $address;
 
-  public function __construct(String $address)
-  {
-    $this->address = $address;
-  }
+    public function __construct(String $address)
+    {
+        $this->address = $address;
+    }
 }
 
-class Person extends Master implements Info {
-  // static and constans
-  const REFERENCE = "<Class Person>";
-  static $description = "Person Class description";
+class Person extends Master implements Info
+{
+    // static and constans
+    const REFERENCE = "<Class Person>";
+    public static $description = "Person Class description";
 
-  // accessors
-  private $name;
-  private $lastname;
-  private $email;
-  public $lang;
-  protected $id = "298392";
+    // accessors
+    private $name;
+    private $lastname;
+    private $email;
+    public $lang;
+    protected $id = "298392";
 
-  // constructor
-  public function __construct(
-    String $name,
-    String $lastName,
-    String $email,
-    String $lang,
-    String $address
-  ) {
-    $this->name = $name;
-    $this->lastName = $lastName;
-    $this->email = $email;
-    $this->lang = $lang;
+    // constructor
+    public function __construct(
+        String $name,
+        String $lastName,
+        String $email,
+        String $lang,
+        String $address
+    ) {
+        $this->name = $name;
+        $this->lastName = $lastName;
+        $this->email = $email;
+        $this->lang = $lang;
 
-    parent::__construct($address);
-  }
+        parent::__construct($address);
+    }
 
-  // methods
-  public function SayMyName(){
-    print("\nMy name is: $this->name \n\n");
-  }
+    // methods
+    public function SayMyName()
+    {
+        print("\nMy name is: $this->name \n\n");
+    }
 
-  static public function StaticMethod(){
-    print("A simple static method");
-  }
+    public static function StaticMethod()
+    {
+        print("A simple static method");
+    }
 
-  // interface method
-  public function getInfo(){
-    return array(
+    // interface method
+    public function getInfo()
+    {
+        return array(
       "nome" => $this->nome,
       "lastName" => $this->lastName,
       "email" => $this->email,
       "lang" => $this->lang
     );
-  }
+    }
 
-  // getters and setters
-  public function __get($key){
-    return $this->$key;
-  }
+    // getters and setters
+    public function __get($key)
+    {
+        return $this->$key;
+    }
 
-  public function __set($key, $value){
-    $this->$key = $value;
-  }
+    public function __set($key, $value)
+    {
+        $this->$key = $value;
+    }
 }
 
 // instancing a new object

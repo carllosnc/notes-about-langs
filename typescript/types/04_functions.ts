@@ -39,8 +39,8 @@
   rest parameters
 ----------------------------------------*/
 {
-  function sum(...values): number {
-    return values.reduce((total, num) => total + num)
+  function sum(...values: number[]): number {
+    return values.reduce((total: number, num: number) => total + num)
   }
 
   console.log(sum(1, 2, 3, 4, 5))
@@ -54,19 +54,7 @@
   ;(arg => {
     console.log(arg)
   })('Hello world')
-
   ;(function (arg) {
     console.log(arg)
   })('Hello world!!!')
-}
-
-{
-  type DescribableFunction = {
-    description: string
-    (someArg: number): boolean
-  }
-
-  function doSomething(fn: DescribableFunction) {
-    console.log(fn.description + ' returned ' + fn(6))
-  }
 }

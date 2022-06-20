@@ -5,7 +5,7 @@
 
 // declaration
 {
-  function showMessage(){
+  function showMessage() {
     console.log('Hello world!')
   }
 
@@ -17,7 +17,7 @@
   // outer variables
   let world = 'world'
 
-  function showMessage(){
+  function showMessage() {
     let message = 'Hello' + world
 
     console.log(message)
@@ -28,7 +28,7 @@
 
 // parameters
 {
-  function showMessage(from, text){
+  function showMessage(from, text) {
     console.log(from, text)
   }
 
@@ -37,7 +37,7 @@
 
 // default values
 {
-  function showMessage(from, text = 'hello world'){
+  function showMessage(from, text = 'hello world') {
     console.log(from, text)
   }
 
@@ -46,7 +46,7 @@
 
 // returning a value
 {
-  function sum(a, b){
+  function sum(a, b) {
     return a + b
   }
 
@@ -54,17 +54,17 @@
 
   // a function with an empty return or without it returns undefined
   // never add a newline between return and the value
-  function doNothing(){}
+  function doNothing() {}
   console.log(doNothing() === undefined)
 }
 
 // function expressions and arrows
 {
-  function sayHello(){
+  function sayHello() {
     console.log('hello!')
   }
 
-  let sayHi = function(){
+  let sayHi = function () {
     console.log('hi!')
   }
 
@@ -77,11 +77,11 @@
 
 // callback function
 {
-  function func(callback){
+  function func(callback) {
     callback('a simple callback')
   }
 
-  func(function(arg){
+  func(function (arg) {
     console.log(arg)
   })
 }
@@ -89,11 +89,11 @@
 // function expression x function declaration
 {
   // function declaration
-  function sum1(a, b){
+  function sum1(a, b) {
     return a + b
   }
 
-  let sum2 = function(a, b){
+  let sum2 = function (a, b) {
     return a + b
   }
 }
@@ -113,7 +113,7 @@
 
 // Self executing anonynous function
 {
-  (function(arg){
+  ;(function (arg) {
     console.log(arg)
   })('Hello world')
 }

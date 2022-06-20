@@ -51,8 +51,8 @@ https://www.typescriptlang.org/docs/handbook/interfaces.html
     readonly y: number
   }
 
-  let origin: Point = { x: 0, y: 0 }
-  // origin.x = 10
+  let origin: Point = { x: 10, y: 20 }
+  // origin.x = 0
   // cannot assign to "x" because it is a read-only property
 }
 

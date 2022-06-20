@@ -7,18 +7,18 @@
 {
   let a = 2 + 2
 
-  switch(a){
+  switch (a) {
     case 3:
-      console.log("too small")
+      console.log('too small')
       break
     case 4:
-      console.log("exactly!")
+      console.log('exactly!')
       break
     case 5:
-      console.log("Too large")
+      console.log('Too large')
       break
     default:
-      console.log("i do not know such values")
+      console.log('i do not know such values')
   }
 }
 
@@ -26,17 +26,17 @@
 {
   let a = 2 + 3
 
-  switch(a){
+  switch (a) {
     case 4:
-      console.log("Right!!")
+      console.log('Right!!')
       break
     case 3:
     case 5:
-      console.log("Wrong!")
-      console.log("Why do not you take a match class?")
+      console.log('Wrong!')
+      console.log('Why do not you take a match class?')
       break
     default:
-      console.log("The result is strange. Really.")
+      console.log('The result is strange. Really.')
   }
 }
 
@@ -45,17 +45,17 @@
   let a = 1
 
   switch (a) {
-    case "0":
-    case "1":
-      console.log("One or zero")
+    case '0':
+    case '1':
+      console.log('One or zero')
       break
-    case "2":
-      console.log("Two")
+    case '2':
+      console.log('Two')
       break
     case 3:
-      console.log("Never executes!")
+      console.log('Never executes!')
       break
     default:
-      console.log("An unknown value")
+      console.log('An unknown value')
   }
 }

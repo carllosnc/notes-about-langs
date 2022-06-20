@@ -68,27 +68,45 @@
   class GenericNumber<T> {
     zeroValue: T
     add: (x: T, y: T) => T
+
+    constructor(zeroValue: T, add: (x: T, y: T) => T) {
+      this.zeroValue = zeroValue
+      this.add = add
+    }
   }
 
-  let myGenericNumber = new GenericNumber<number>()
-  myGenericNumber.zeroValue = 0
-  myGenericNumber.add = function (x, y) {
+  function add(x: number, y: number): number {
     return x + y
   }
+
+  new GenericNumber<number>(10, add)
 }
 
 /*---------------------------------------
   generic and actions
 ----------------------------------------*/
-
 {
   function fn<T extends number | string, K extends boolean>(
     arg: T,
     arg2: K
   ): T {
+    console.log(arg2)
     return arg
   }
 
   fn('Hello world', true)
   fn(10, false)
+}
+
+/*---------------------------------------
+  generic with types alias
+----------------------------------------*/
+
+{
+  type Person<T> = {
+    name: string
+    age: number
+    lang: string
+    vehicle: T
+  }
 }

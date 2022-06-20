@@ -12,31 +12,31 @@
 {
   let range = {
     from: 1,
-    to: 5
+    to: 5,
   }
 
-  range[Symbol.iterator] = function(){
+  range[Symbol.iterator] = function () {
     return {
-      current:this.from,
+      current: this.from,
       last: this.to,
-      next(){
-        if(this.current <= this.last){
-          return { done: false, value: this.current++}
-        }else{
+      next() {
+        if (this.current <= this.last) {
+          return { done: false, value: this.current++ }
+        } else {
           return { done: true }
         }
-      }
+      },
     }
   }
 
-  for(let num of range){
+  for (let num of range) {
     console.log(num)
   }
 }
 
 // string is iterable
 {
-  for(let char of 'Hello world!'){
+  for (let char of 'Hello world!') {
     console.log(char)
   }
 }
@@ -47,9 +47,9 @@
 
   let iterator = str[Symbol.iterator]()
 
-  while(true){
+  while (true) {
     let result = iterator.next()
-    if(result.done) break
+    if (result.done) break
     console.log(result.value)
   }
 }
@@ -58,18 +58,19 @@
 // iterables are objects that implement the Symbol.iterator methos, as described above
 // array-likes are objects that have indexes and length, so they look like arrays
 {
-
-  let arrayLike = { // has indexes and length = array-like
+  let arrayLike = {
+    // has indexes and length = array-like
     0: 'Hello',
     1: 'World',
-    length: 2
+    length: 2,
   }
 
   // error (no Symbol.iterator)
 
-  try{
-    for(let item of arrayLike){}
-  }catch(e){
+  try {
+    for (let item of arrayLike) {
+    }
+  } catch (e) {
     console.log(e.message)
   }
 }
@@ -79,7 +80,7 @@
   let arrayLike = {
     0: 'Hello',
     1: 'World',
-    length: 2
+    length: 2,
   }
 
   let arr = Array.from(arrayLike)

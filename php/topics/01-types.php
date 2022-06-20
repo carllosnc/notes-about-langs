@@ -46,7 +46,7 @@ $_boolean = true;
 $_double = 10.2;
 $_array = array(1, 2, 3);
 $_object = new stdClass;
-$_null = NULL;
+$_null = null;
 $_resource = tmpfile();
 
 echo gettype($_number)."\n";

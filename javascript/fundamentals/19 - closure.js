@@ -10,14 +10,14 @@
 
 // simple clousure
 {
-  function fn(arg){
-    return function(){
+  function fn(arg) {
+    return function () {
       console.log(arg)
     }
   }
 
-  const foo = fn("foo")
-  const bar = fn("bar")
+  const foo = fn('foo')
+  const bar = fn('bar')
 
   foo()
   bar()
@@ -26,41 +26,39 @@
 // code blocks
 {
   // local variable
-  let message = "hello"
+  let message = 'hello'
   console.log(message)
 }
 
 // IIFE (Immediately-invoked function expression)
 {
-  (function(){
-    let message = "hello"
+  ;(function () {
+    let message = 'hello'
     console.log(message)
-  })();
+  })()
 
   // ways to create IIFE
-  (function(){
-    console.log("Parentheses around the function")
-  })();
+  ;(function () {
+    console.log('Parentheses around the function')
+  })()
+  ;(function () {
+    console.log('Parentheses around the whole thing')
+  })()
 
-  (function(){
-    console.log("Parentheses around the whole thing")
-  }())
-
-  !function(){
-    console.log("Birwise NOT operator starts the expression")
-  }
-
-  +function(){
-    console.log("Unary plus starts the expression")
-  }
+  !function () {
+    console.log('Birwise NOT operator starts the expression')
+  } +
+    function () {
+      console.log('Unary plus starts the expression')
+    }
 }
 
 // garbage collection
 {
-  function f(){
+  function f() {
     let value = 123
 
-    function g(){
+    function g() {
       console.log(value)
     }
 
@@ -73,16 +71,16 @@
 // cache function
 {
   // sum function with cache
-  const sum = (function(){
+  const sum = (function () {
     const cache = new Map()
 
     return (a = 0, b = 0) => {
-      const values = JSON.stringify({a: b, b: b})
+      const values = JSON.stringify({ a: b, b: b })
       const isCached = cache.get(values)
 
-      if(isCached){
+      if (isCached) {
         return `From cache - ${isCached}`
-      }else {
+      } else {
         const total = a + b
         cache.set(values, total)
 

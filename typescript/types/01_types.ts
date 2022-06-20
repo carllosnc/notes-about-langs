@@ -58,6 +58,23 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
 }
 
 /*---------------------------------------
+  object types
+----------------------------------------*/
+{
+  type Person = {
+    name: string
+    age: number
+    lang: string
+  }
+
+  const bob: Person = {
+    name: 'Bob',
+    age: 20,
+    lang: 'typescript',
+  }
+}
+
+/*---------------------------------------
   enum
 ----------------------------------------*/
 {
@@ -165,7 +182,6 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
 /*---------------------------------------
   Literal types
 ----------------------------------------*/
-
 {
   type Animal = 'Dog' | 'Cat' | 'Bird'
   const bob: Animal = 'Dog'

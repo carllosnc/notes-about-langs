@@ -5,10 +5,10 @@
 
 // rest parameters
 {
-  function sumAll(...args){
+  function sumAll(...args) {
     let sum = 0
 
-    for(let arg of args) sum += arg
+    for (let arg of args) sum += arg
 
     return sum
   }
@@ -20,14 +20,14 @@
 
 // the argument variable
 {
-  function fn(){
+  function fn() {
     console.log(arguments.length)
     console.log(arguments[0])
     console.log(arguments[1])
   }
 
-  fn("Julius", "Caesar")
-  fn("Ilya")
+  fn('Julius', 'Caesar')
+  fn('Ilya')
 }
 
 // Arrow functions do not have "Arguments"
@@ -43,5 +43,5 @@
 {
   const values = [1, 2, 3]
   console.log(Math.max(...values))
-  console.log(..."Hello world")
+  console.log(...'Hello world')
 }

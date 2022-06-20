@@ -7,52 +7,61 @@
 
 declare(strict_types=1);
 
-trait Base {
-  static public $type = "Base Trait";
+trait Base
+{
+    public static $type = "Base Trait";
 
-  // magic methods
-  public function __get($name){
-    return $this->$name;
-  }
+    // magic methods
+    public function __get($name)
+    {
+        return $this->$name;
+    }
 
-  public function __set($name, $value){
-    return $this->$name = $value;
-  }
+    public function __set($name, $value)
+    {
+        return $this->$name = $value;
+    }
 
-  // abstract method
-  abstract function getClassType(): String;
+    // abstract method
+    abstract public function getClassType(): String;
 
-  // static method
-  static function getBaseTrait(){
-    return "<BaseTrait>";
-  }
+    // static method
+    public static function getBaseTrait()
+    {
+        return "<BaseTrait>";
+    }
 }
 
-trait Comunication {
-  use Base;
+trait Comunication
+{
+    use Base;
 
-  // variable
-  public $reference = "trait comunication";
+    // variable
+    public $reference = "trait comunication";
 
-  // method
-  public function sayMyName(){
-    echo "My name is " . $this->name . "\n";
-  }
+    // method
+    public function sayMyName()
+    {
+        echo "My name is " . $this->name . "\n";
+    }
 
-  public function getClassType(): String{
-    return $this->classType;
-  }
+    public function getClassType(): String
+    {
+        return $this->classType;
+    }
 }
 
-class People {
-  use Comunication;
+class People
+{
+    use Comunication;
 
-  private $name;
-  private $classType = "<Class People>";
+    private $name;
+    private $classType = "<Class People>";
 
-  function __construct(String $name){
-    $this->name = $name;
-  }
+    public function __construct(String $name)
+    {
+        $this->name = $name;
+    }
 }
 
 $bob = new People("Bob");

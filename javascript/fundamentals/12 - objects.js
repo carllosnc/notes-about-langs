@@ -8,7 +8,7 @@
   let user = {
     name: 'jonh',
     age: 30,
-    'like birds': true
+    'like birds': true,
   }
 
   console.log(user.name, user.age)
@@ -42,7 +42,7 @@
   const obj = {
     [foo]: 1,
     [bar]: 2,
-    [span]: 3
+    [span]: 3,
   }
 
   console.log(obj)
@@ -50,7 +50,7 @@
 
 // property value shorthand
 {
-  function makeUser(name, age){
+  function makeUser(name, age) {
     return {
       name, // same as name: name
       age, // same as age: age
@@ -73,12 +73,12 @@
 // the for...in loop
 {
   let user = {
-    name: "jonh",
+    name: 'jonh',
     age: 30,
-    isAdmin: true
+    isAdmin: true,
   }
 
-  for(let key in user){
+  for (let key in user) {
     console.log(key, '-', user[key])
   }
 }
@@ -105,7 +105,7 @@
 // const object
 {
   const user = {
-    name: 'jonh'
+    name: 'jonh',
   }
 
   user.name = 'fred'
@@ -118,27 +118,27 @@
 {
   let user = {
     name: 'John',
-    age: 30
+    age: 30,
   }
 
   let clone = {}
 
   // Basic mode
-  for(let key in user){
+  for (let key in user) {
     clone[key] = user[key]
   }
 
-  clone.name = "Pete"
+  clone.name = 'Pete'
 
   console.log(user.name)
   console.log(clone.name)
 
   // Object assign
-  let another = Object.assign({lang: 'javascript'}, user)
+  let another = Object.assign({ lang: 'javascript' }, user)
   console.log(another)
 
   // Destruction object
-  let bob = { ...user, lang: 'php'}
+  let bob = { ...user, lang: 'php' }
   console.log(bob)
 }
 
@@ -149,13 +149,13 @@
     name: 'John',
     money: 1000,
 
-    toString(){
+    toString() {
       return `User object!`
     },
 
-    valueOf(){
+    valueOf() {
       return this.money
-    }
+    },
   }
 
   console.log(user)
@@ -167,9 +167,9 @@
 // further operations
 {
   let obj = {
-    toString(){
-      return "2"
-    }
+    toString() {
+      return '2'
+    },
   }
 
   console.log(obj * 2) // toPrimitive gives "2", then it becomes 2
@@ -178,22 +178,22 @@
 
 // contructor function
 {
-  function User(name){
+  function User(name) {
     this.name = name
     this.isAdmin = false
   }
 
-  let user = new User("Bob")
+  let user = new User('Bob')
 
   console.log(user.name, user.isAdmin)
 }
 
 // methods in contructor
 {
-  function User(name){
+  function User(name) {
     this.name = name
 
-    this.sayHi = function(){
+    this.sayHi = function () {
       console.log(`My name is: ${this.name}`)
     }
   }
@@ -208,7 +208,7 @@
     name: 'Bob',
     age: 20,
     lang: 'javascript',
-    email: 'bob@gmail.com'
+    email: 'bob@gmail.com',
   }
 
   console.log('keys', Object.keys(user))

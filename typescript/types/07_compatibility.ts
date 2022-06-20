@@ -14,10 +14,14 @@ https://www.typescriptlang.org/docs/handbook/type-compatibility.html
 
   class Person {
     name: string
+
+    constructor(name: string) {
+      this.name = name
+    }
   }
 
   let p: Named
-  p = new Person()
+  p = new Person('Bob')
 
   console.log(p instanceof Person)
 }
@@ -70,17 +74,17 @@ https://www.typescriptlang.org/docs/handbook/type-compatibility.html
 ----------------------------------------*/
 {
   class Animal {
-    feet: number
+    feet: number = 10
     constructor(name: string, numFeet: number) {}
   }
 
   class Size {
-    feet: number
+    feet: number = 10
     constructor(numFeet: number) {}
   }
 
-  let a: Animal
-  let s: Size
+  let a: Animal = new Animal('foo', 10)
+  let s: Size = new Size(10)
 
   a = s // ok
   s = a // ok
@@ -92,8 +96,8 @@ https://www.typescriptlang.org/docs/handbook/type-compatibility.html
 {
   interface Empty<T> {}
 
-  let x: Empty<number>
-  let y: Empty<string>
+  let x: Empty<number> = 10
+  let y: Empty<string> = '10'
 
   x = y // Ok, because y matches structure of x
 }

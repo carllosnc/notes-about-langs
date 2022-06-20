@@ -9,7 +9,7 @@
 // basic types
 {
   let a = 10 // int
-  let b = "10" // string
+  let b = '10' // string
   let c = 10.0 // float
   let d = false // boolean
   let e = {} // symbol
@@ -22,12 +22,12 @@
 
 // typeof operator
 {
-  let foo = "hello"
+  let foo = 'hello'
   let bar = 100
   let span = 10.0
   let fizz = []
   let dex = {}
-  let hey = function(){}
+  let hey = function () {}
 
   console.log(typeof foo) // string
   console.log(typeof bar) // number
@@ -48,9 +48,9 @@
 
 // type conversion to number
 {
-  console.log("6" / "2") // 3 string are converted to numbers
+  console.log('6' / '2') // 3 string are converted to numbers
 
-  let str = "123"
+  let str = '123'
   console.log(typeof str) // string
 
   let num = Number(str) // become a number 123
@@ -59,14 +59,14 @@
 
 // type conversion to boolean
 {
-  let fn = function(){}
+  let fn = function () {}
 
   // true types
   console.log(Boolean(1))
   console.log(Boolean(-1))
   console.log(Boolean(0.1))
-  console.log(Boolean("0"))
-  console.log(Boolean("foo"))
+  console.log(Boolean('0'))
+  console.log(Boolean('foo'))
   console.log(Boolean(true))
   console.log(Boolean({}))
   console.log(Boolean([]))
@@ -80,7 +80,7 @@
   console.log(Boolean(undefined))
   console.log(Boolean(null))
   console.log(Boolean(NaN))
-  console.log(Boolean(""))
+  console.log(Boolean(''))
   console.log(Boolean([].length))
 }
 
@@ -97,15 +97,15 @@
 // Simple object
 {
   let john = {
-    name: "john",
-    sayHi: function(){
-      console.log("hi buddy")
-    }
+    name: 'john',
+    sayHi: function () {
+      console.log('hi buddy')
+    },
   }
 
   john.sayHi()
 
-  let str = "Hello" // primitive
+  let str = 'Hello' // primitive
 
   console.log(str.toUpperCase()) // object
 }
@@ -118,11 +118,11 @@
   console.log(typeof x) // number
   console.log(typeof y) // object
 
-  if(x){
+  if (x) {
     // 0 is false
   }
 
-  if(y){
+  if (y) {
     // 0 is true
   }
 

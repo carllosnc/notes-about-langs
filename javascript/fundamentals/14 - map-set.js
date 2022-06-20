@@ -7,9 +7,9 @@
 {
   let map = new Map()
 
-  map.set("1", "str1") // a string key
-  map.set(1, "num1") // a numeric key
-  map.set(true, "bool1") // a boolean key
+  map.set('1', 'str1') // a string key
+  map.set(1, 'num1') // a numeric key
+  map.set(true, 'bool1') // a boolean key
 
   console.log(map.get(1)) // num1
   console.log(map.get('1')) // str1
@@ -22,15 +22,17 @@
   let map1 = new Map([
     ['1', 'str1'],
     [1, 'num1'],
-    [true, 'bool1']
+    [true, 'bool1'],
   ])
 
   console.log(map1)
 
-  let map2 = new Map(Object.entries({
-    name: "John",
-    age: 30
-  }))
+  let map2 = new Map(
+    Object.entries({
+      name: 'John',
+      age: 30,
+    })
+  )
 
   console.log(map2)
 }
@@ -46,21 +48,21 @@
   let recipeMap = new Map([
     ['cucumber', 500],
     ['tomatoes', 350],
-    ['onion',    50]
+    ['onion', 50],
   ])
 
   // iterate over keys (vegetables)
   for (let vegetable of recipeMap.keys()) {
-    console.log(vegetable); // cucumber, tomatoes, onion
+    console.log(vegetable) // cucumber, tomatoes, onion
   }
 
   // iterate over values (amounts)
-  for(let amount of recipeMap.values()){
+  for (let amount of recipeMap.values()) {
     console.log(amount)
   }
 
   // iterate over [key, value] entries
-  for(let entry of recipeMap.entries()){
+  for (let entry of recipeMap.entries()) {
     console.log(entry)
   }
 }
@@ -69,9 +71,9 @@
 {
   let set = new Set()
 
-  let john = { name: "John" }
-  let pete = { name: "Pete" }
-  let mary = { name: "Mary" }
+  let john = { name: 'John' }
+  let pete = { name: 'Pete' }
+  let mary = { name: 'Mary' }
 
   // visits, some users come multiple items
   set.add(john)
@@ -88,7 +90,7 @@
   // set.values() – same as set.keys(), for compatibility with Map,
   // set.entries() – returns an iterable object for entries [value, value], exists for compatibility with Map.
 
-  for(let user of set){
+  for (let user of set) {
     console.log(user)
   }
 }

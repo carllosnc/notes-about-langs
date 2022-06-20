@@ -8,28 +8,28 @@
 declare(strict_types=1);
 
 // if/else
-if(true){
-  echo "condition 1 \n";
-}elseif(true){
-  echo "condition 2 \n";
-}else{
-  echo "condition 3 \n";
+if (true) {
+    echo "condition 1 \n";
+} elseif (true) {
+    echo "condition 2 \n";
+} else {
+    echo "condition 3 \n";
 }
 
 // switch case
 $x1 = "two";
 
-switch($x1) {
+switch ($x1) {
   case "zero":
     print "--ZERO-- \n";
     break;
-  case "one";
+  case "one":
     print "--ONE-- \n";
     break;
-  case "two";
+  case "two":
     print "--TWO-- \n";
     break;
-  default;
+  default:
     print "default option \n";
 }
 

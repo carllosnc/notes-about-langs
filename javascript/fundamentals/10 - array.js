@@ -8,24 +8,24 @@
   let x = new Array()
   let y = []
 
-  let fruits = ["Apple", "Orange", "Plum"]
+  let fruits = ['Apple', 'Orange', 'Plum']
 }
 
 // loops
 {
-  let fruits = [ "Apple", "Orange", "Pear"]
+  let fruits = ['Apple', 'Orange', 'Pear']
 
-  for(let i = 0; i < fruits.length; i ++ ){
+  for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i])
   }
 
   // for...of
-  for(let fruit of fruits){
+  for (let fruit of fruits) {
     console.log(fruit)
   }
 
   // for...in (Because array are thecnically objects)
-  for(let key in fruits){
+  for (let key in fruits) {
     console.log(fruits[key])
   }
 }
@@ -74,7 +74,7 @@
 
 // slice
 {
-  let str = "test"
+  let str = 'test'
   let arr = Array.from(str)
 
   console.log(str.slice(1, 3)) // es

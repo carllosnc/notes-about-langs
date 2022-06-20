@@ -18,6 +18,6 @@ $diff = $end->diff($start);
 echo "Start date: " . $start->format("Y-m-d") . "\n";
 echo "Difference: " . $diff->format("%m month. %d day (total: %a days)") . "\n";
 
-if($start < $end){
-  echo "Start is before the end!\n";
+if ($start < $end) {
+    echo "Start is before the end!\n";
 }

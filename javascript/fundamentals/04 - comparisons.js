@@ -12,15 +12,15 @@
 
 // string comparison
 {
-  console.log("Z" > "A") // true
-  console.log("Glow" > "Glee") // true
-  console.log("Bee" > "Be") // true
+  console.log('Z' > 'A') // true
+  console.log('Glow' > 'Glee') // true
+  console.log('Bee' > 'Be') // true
 }
 
 // comparison of different types
 {
-  console.log("2" > 1) // true, string "2" becomes a number 2
-  console.log("01" === 1) // true, string "01" becomes a number 1
+  console.log('2' > 1) // true, string "2" becomes a number 2
+  console.log('01' === 1) // true, string "01" becomes a number 1
 }
 
 {
@@ -33,20 +33,19 @@
   let a = 0
   console.log(Boolean(a)) // false
 
-  let b = "0"
+  let b = '0'
   console.log(Boolean(b)) // true
-
 }
 
 // Strict equality
 {
   // regular equality (==)
-  console.log( 0 == false ) // true
-  console.log( "" == false ) // true
+  console.log(0 == false) // true
+  console.log('' == false) // true
 
   // strict equality (===)
-  console.log( 0 === false ) // true
-  console.log( "" === false ) // true
+  console.log(0 === false) // true
+  console.log('' === false) // true
 }
 
 // Comparison with null and undefined
@@ -55,7 +54,7 @@
   console.log(null === undefined) // false
 
   // for a non-strict check ==
-  console.log(null == undefined ) // true
+  console.log(null == undefined) // true
 }
 
 // Strange result: null vs 0
@@ -68,7 +67,7 @@
 // An incomparable undefined
 
 {
-  console.log( undefined > 0 ) // false
-  console.log( undefined < 0 ) // false
-  console.log( undefined == 0 ) // false
+  console.log(undefined > 0) // false
+  console.log(undefined < 0) // false
+  console.log(undefined == 0) // false
 }

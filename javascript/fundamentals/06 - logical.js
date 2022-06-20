@@ -12,7 +12,7 @@
   console.log(false || false) // false
 
   // numbers
-  if(1 || 0){
+  if (1 || 0) {
     console.log(true) // true
   }
 
@@ -20,14 +20,14 @@
   let hour = 12
   let isWeekend = true
 
-  if(hour < 10 || hour > 18 || isWeekend){
-    console.log("The office is closed")
+  if (hour < 10 || hour > 18 || isWeekend) {
+    console.log('The office is closed')
   }
 
   //OR finds the first truthy value
   console.log(1 || 0) // (1 is truthy)
-  console.log( true || "no matter what" ) // (true is truthy)
-  console.log(null || 1)  // 1 (1 is the first truthy value)
+  console.log(true || 'no matter what') // (true is truthy)
+  console.log(null || 1) // 1 (1 is the first truthy value)
   console.log(null || 0 || 1) // 1 (1 is the first truthy value)
   console.log(undefined || null || 0) // 0 (all falsy, return  the last value)
 
@@ -46,7 +46,7 @@
   console.log(true && true) // true
   console.log(true && false) // false
   console.log(false && true) // false
-  console.log(false && false ) // false
+  console.log(false && false) // false
 
   //(AND) finds the first falsy value
 
@@ -64,8 +64,7 @@
 
   // just like OR, the AND && operator can sometimes replace if
   let x = 1
-  x > 0 &&
-  console.log("Greater than zero!")
+  x > 0 && console.log('Greater than zero!')
 }
 
 // !(NOT)
@@ -73,11 +72,11 @@
   console.log(!true) // false
   console.log(!0) // true
   console.log(!null) // true
-  console.log(!"") // true
+  console.log(!'') // true
   console.log(!NaN) // true
 
   // a double not !! is sometimes used for converting a value to bolean type
-  console.log(!!"non-empty string") // true
+  console.log(!!'non-empty string') // true
   console.log(!!null) // false
   console.log(!!0) // false
   console.log(!!1) // true

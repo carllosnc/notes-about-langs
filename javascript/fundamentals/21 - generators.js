@@ -4,7 +4,7 @@
 */
 
 {
-  function* generateSequence(){
+  function* generateSequence() {
     yield 1
     yield 2
     return 3
@@ -19,7 +19,7 @@
 
 // generators are iterables
 {
-  function* generateSequence(){
+  function* generateSequence() {
     yield 1
     yield 2
     yield 3
@@ -28,14 +28,14 @@
 
   let generator = generateSequence()
 
-  for(let value of generator){
+  for (let value of generator) {
     console.log(value)
   }
 }
 
 // destruction
 {
-  function* generateSequence(){
+  function* generateSequence() {
     yield 1
     yield 2
     yield 3
@@ -50,20 +50,20 @@
 {
   let range = {
     from: 1,
-    to:5,
-    [Symbol.iterator](){
+    to: 5,
+    [Symbol.iterator]() {
       return {
         current: this.from,
         last: this.to,
-        next(){
-          if(this.current <= this.last){
+        next() {
+          if (this.current <= this.last) {
             return { done: false, value: this.current++ }
-          }else {
+          } else {
             return { done: true }
           }
-        }
+        },
       }
-    }
+    },
   }
 
   console.log([...range])
@@ -71,26 +71,26 @@
 
 // using a generator to make iterable sequences.
 {
-  function* generateSequence(start, end){
-    for(let i = start; i <= end; i++){
+  function* generateSequence(start, end) {
+    for (let i = start; i <= end; i++) {
       yield i
     }
   }
 
-  let sequence =  [...generateSequence(1, 5)]
+  let sequence = [...generateSequence(1, 5)]
 
   console.log(sequence)
 }
 
 // generator composition
 {
-  function* generateSequence(start, end){
-    for(let i = start; i <= end; i++){
+  function* generateSequence(start, end) {
+    for (let i = start; i <= end; i++) {
       yield i
     }
   }
 
-  function* generatePasscode(){
+  function* generatePasscode() {
     yield* generateSequence(48, 57)
     yield* generateSequence(65, 90)
     yield* generateSequence(97, 122)
@@ -98,7 +98,7 @@
 
   let str = ''
 
-  for(let code of generatePasscode()){
+  for (let code of generatePasscode()) {
     str += String.fromCharCode(code)
   }
 
@@ -107,10 +107,10 @@
 
 // "yield is a two-way road"
 {
-  function* gen(){
-    let ask1 = yield "2 + 2?"
+  function* gen() {
+    let ask1 = yield '2 + 2?'
     console.log(ask1)
-    let ask2 = yield "3 * 3?"
+    let ask2 = yield '3 * 3?'
     console.log(ask2)
   }
 
@@ -122,11 +122,13 @@
 
 // generator.throw
 {
-  function* gen(){
-    try{
-      let result = yield "2 + 2"
-      console.log("The execution does not reach here, because the exception is throw above")
-    }catch(e){
+  function* gen() {
+    try {
+      let result = yield '2 + 2'
+      console.log(
+        'The execution does not reach here, because the exception is throw above'
+      )
+    } catch (e) {
       console.log(`Error - ${e.message}`)
     }
   }
@@ -135,14 +137,13 @@
   let question = generator.next().value
 
   console.log(question)
-  generator.throw(new Error("The answer is not found in my database"))
+  generator.throw(new Error('The answer is not found in my database'))
 }
 
 // async generator
 {
-  async function* generateSequence(start, end){
-    for(let i = start; i <= end; i++){
-
+  async function* generateSequence(start, end) {
+    for (let i = start; i <= end; i++) {
       // waiting one sec here.
       await new Promise(resolve => setTimeout(resolve, 1000))
 
@@ -150,10 +151,10 @@
     }
   }
 
-  (async () => {
+  ;(async () => {
     let generator = generateSequence(1, 5)
 
-    for await (let value of generator){
+    for await (let value of generator) {
       console.log(value)
     }
   })()
@@ -161,7 +162,7 @@
 
 // example
 {
-  function timer(time){
+  function timer(time) {
     return new Promise(resolve => {
       setTimeout(() => {
         resolve(`After ${time}s`)
@@ -169,16 +170,16 @@
     })
   }
 
-  async function* gen(){
-    for(let i of  [3, 4, 1]){
+  async function* gen() {
+    for (let i of [3, 4, 1]) {
       yield await timer(i)
     }
   }
 
-  (async () => {
+  ;(async () => {
     let elements = gen()
 
-    for await ( let value of elements ){
+    for await (let value of elements) {
       console.log(value)
     }
   })()

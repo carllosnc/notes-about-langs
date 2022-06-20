@@ -8,8 +8,7 @@
 declare(strict_types=1);
 
 try {
-  //code...
+    //code...
 } catch (\Throwable $th) {
-  //throw $th;
+    //throw $th;
 }
-
