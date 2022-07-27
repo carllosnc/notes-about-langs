@@ -1,42 +1,45 @@
 <?php
-/*
-  ===================
-  Types and variables
-  ===================
-*/
 
 declare(strict_types=1);
 
 // simple argument
-function fn1(string $arg)
 {
-    echo $arg;
-}
+    function fn1(string $arg)
+    {
+        echo $arg;
+    }
+    fn1("simple argument \n");
 
-fn1("simple argument \n");
+}
 
 // callback
-function fn2($arg)
 {
-    $arg();
-}
+    function fn2($arg)
+    {
+        $arg();
+    }
 
-fn2(function () {
-    echo "Call back \n";
-});
+    fn2(function () {
+        echo "Call back \n";
+    });
+}
 
 // default argument
-function fn3($arg = "hello world")
 {
-    echo $arg . "\n";
-}
+    function fn3($arg = "hello world")
+    {
+        echo $arg . "\n";
+    }
 
-fn3();
+    fn3();
+}
 
 // infinite args
-function fn4(...$args)
 {
-    echo gettype($args) . "\n";
-}
+    function fn4(...$args)
+    {
+        echo gettype($args) . "\n";
+    }
 
-fn4("primeiro", "segundo");
+    fn4("primeiro", "segundo");
+}

@@ -1,6 +1,5 @@
+// Partial<Types>
 {
-  // Partial<Types>
-
   interface Todo {
     title: string
     description: string
@@ -20,9 +19,8 @@
   })
 }
 
+// Require<Type>
 {
-  // Require<Type>
-
   interface Props {
     a?: number
     b?: string

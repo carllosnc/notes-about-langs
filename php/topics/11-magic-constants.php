@@ -1,9 +1,4 @@
 <?php
-/*
-  ===================
-  Magic constants
-  ===================
-*/
 
 declare(strict_types=1);
 

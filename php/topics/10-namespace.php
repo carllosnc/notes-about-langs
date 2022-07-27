@@ -1,9 +1,5 @@
 <?php
-/*
-  ===================
-  Namespace
-  ===================
-*/
+
 declare(strict_types=1);
 
 include "../lib/myclass1.php";

@@ -1,9 +1,8 @@
 <?php
-/*
-  ===================
-  Class
-  ===================
 
+declare(strict_types=1);
+
+/*
   - contrcutor
   - constants
   - static
@@ -12,8 +11,6 @@
   - interface
   - inheritance
 */
-
-declare(strict_types=1);
 
 interface Info
 {
