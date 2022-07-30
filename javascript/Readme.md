@@ -1,12 +1,12 @@
 <p align="center">
-  <img alt="javascript" style="border-radius: 100px" src="https://miro.medium.com/max/342/1*rpYyNZvqfFej0FgWEW5p9Q.png" width="110" />
+  <img alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" />
 </p>
 
 <h1 align="center">
   Javascript notes
 </h1>
 
-Notes about javascript
+> Notes about javascript
 
 #### Resources
 - [Javascript Info](https://javascript.info)
