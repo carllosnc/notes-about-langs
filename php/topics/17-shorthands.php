@@ -99,5 +99,3 @@ declare(strict_types=1);
         $parameters['property'] = $parameters['property'] ?? 'default';
     }
 }
-
-// Spaceship operator

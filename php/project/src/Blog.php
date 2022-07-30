@@ -4,11 +4,11 @@ class Blog
 {
     public function __construct()
     {
-        echo 'Hello world!';
+        echo Blog::class;
     }
 
     public static function foo()
     {
-        return 'this is a simple funciton to working with php';
+        return "this is a simple function \n";
     }
 }
