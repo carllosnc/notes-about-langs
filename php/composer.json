@@ -7,6 +7,9 @@
           "App\\": "project/src"
         }
     },
+    "scripts": {
+        "test": "./vendor/bin/pest"
+    },
     "authors": [
         {
             "name": "Carlos Costa",
