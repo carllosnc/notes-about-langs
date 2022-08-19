@@ -10,7 +10,7 @@
   "main": "playground.js",
   "devDependencies": {},
   "scripts": {
-    "play": "ts-node playground.ts"
+    "start": "ts-node playground.ts"
   },
   "repository": {
     "type": "git",

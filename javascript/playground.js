@@ -1,14 +1,3 @@
-function makePromise(timer){
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(`after ${timer} seconds`)
-    }, timer * 1000);
-  })
-}
-
-makePromise(3)
-.then((value) => {
-  console.log(value)
-})
-
-console.log('Hello world!')
+console.log(null ?? 'not found')
+console.log(undefined ?? 'not found')
+console.log('hello world' ?? 'foo')
