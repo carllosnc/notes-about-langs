@@ -1,20 +1,14 @@
-print("yay" if 0 > 1 else "nay!")
+# class life cycle python
 
-list = []
-list.append(1)
-list.append(2)
-list.append(3)
-list.append(4)
-list.append(5)
+class Foo:
+    def __init__(self) -> None:
+        print('init')
 
-print(list)
+    def __enter__(self):
+        print('enter')
 
-print('hello world, working better with python!!!')
+    def __exit__(self):
+        print('exit')
 
-del list[1]
 
-print(list[0:1])
-print(list[1:2])
-print(list[1:3])
-print(1 in list)
-print(2 in list)
+fn = Foo()

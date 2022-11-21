@@ -41,14 +41,11 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
   tuple
 ----------------------------------------*/
 {
-  let x: [string]
-  x = ['Hello world']
+  let x: [string] = ['Hello world']
 
-  let y: [string, string]
-  y = ['Hello', 'world']
+  let y: [string, string] = ['Hello', 'world']
 
-  let z: [string, boolean, number]
-  z = ['Hello world', true, 42]
+  let z: [string, boolean, number] = ['Hello world', true, 42]
 
   let k: [string, number] = ['foo', 10]
 

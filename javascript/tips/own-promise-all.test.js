@@ -3,15 +3,15 @@ import test from 'ava'
 function promiseAll(promises) {
   return new Promise((resolve, reject) => {
     if (!promises) {
-      reject('need array of promises')
+      reject('enter an array of promises')
     }
 
     const items = []
 
-    promises.map(promise => {
+    promises.map((promise, index) => {
       promise
         .then(item => {
-          items.push(item)
+          items[index] = item
         })
         .catch(() => {
           reject()
@@ -37,6 +37,6 @@ test('promiseAll: should thrown an error when the main argument is not passed', 
   try {
     await promiseAll()
   } catch (error) {
-    t.is(error, 'need array of promises')
+    t.is(error, 'enter an array of promises')
   }
 })

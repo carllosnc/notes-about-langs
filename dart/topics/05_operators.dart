@@ -55,9 +55,7 @@ main(List<String> args) {
 
   // type test operators
 
-  print("foo" is String);
   print("foo" is! num);
-  print(("foo" as String).toUpperCase());
 
   // logical operators
 
@@ -77,10 +75,9 @@ main(List<String> args) {
 
   var value;
 
-  var exp1 = !true ? 'hello' : 'world';
-  var exp2 = value ?? "hello world";
+  var exp1 = value ?? "hello world";
 
-  print('$exp1 $exp2');
+  print('$exp1');
 
   // cascade notation
 
@@ -100,7 +97,7 @@ main(List<String> args) {
   // ?. - Conditional member access
 
   Mock bar = Mock('Hello world!');
-  print(bar?.text);
+  print(bar.text);
 
 }
 

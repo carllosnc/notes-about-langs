@@ -38,14 +38,14 @@ String short() => "Short syntax to 'return exp;'";
 /*---------------------------------------
   optional named parameters
 ----------------------------------------*/
-optional({String foo, String bar}){
+optional({String foo = 'foo', String bar = 'bar'}){
   print('$foo -> $bar');
 }
 
 /*---------------------------------------
   optional positional parameters
 ----------------------------------------*/
-optional_positional(String foo, String bar, [String span]){
+optional_positional(String foo, String bar, [String span = 'span']){
   print('$foo $bar $span');
 }
 

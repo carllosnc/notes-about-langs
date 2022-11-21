@@ -62,9 +62,7 @@ class Person {
 class Programmer extends Person {
   String language;
 
-  Programmer(String name, int age, String language): super(name, age){
-    this.language = language;
-  }
+  Programmer(String name, int age, String this.language): super(name, age);
 }
 
 /*---------------------------------------
@@ -171,9 +169,7 @@ class Persona{
 class Worker extends Persona{
   String job;
 
-  Worker(String name, int age, String job) : super(name, age){
-    this.job = job;
-  }
+  Worker(String name, int age, String this.job) : super(name, age);
 }
 
 /*---------------------------------------
@@ -228,48 +224,7 @@ class Storage {
 }
 
 main(List<String> args) {
-  // inherit constructor
-  Programmer bob = Programmer('bob', 20, 'Dart');
-  print(bob is Programmer);
 
-  // initialize and validate
-  Car gol = Car('gol', 2012);
-  print(gol is Car);
+  print('classes');
 
-  // constant constructors
-  print(ImmutablePoint.origin.x);
-  print(ImmutablePoint.origin.y);
-
-  // getters and setters
-  Rectangle rect = new Rectangle();
-
-  print(rect is Rectangle);
-  print("""
-    top -> ${rect.top}
-    bottom -> ${rect.bottom}
-    right -> ${rect.right}
-    left -> ${rect.left}
-  """);
-
-  // extending a class
-  Worker joe = Worker('joe', 20, 'programmer');
-  print(joe is Persona);
-  print(joe is Worker);
-  print(joe.name);
-
-  // overriding members
-  SmartTelevision tele = SmartTelevision();
-  print(tele is Television);
-  print(tele is SmartTelevision);
-  print(tele.turnOn());
-
-  // mixins
-  Musician jimmy = Musician('Jimmy');
-  jimmy.playPiano();
-  jimmy.playGuitar();
-
-  // classs variables and methods
-  print(Storage.type);
-  print(Storage.listFruits);
-  Storage.showFruits();
 }

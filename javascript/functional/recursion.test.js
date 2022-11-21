@@ -1,10 +1,5 @@
 import test from 'ava'
 
-/*
-  Recursion is a topic in functional programing.
-  When a function calls itself, it's called a recursive function
-*/
-
 test('recursion', t => {
   function loop(init, end, action) {
     // condition to end loop

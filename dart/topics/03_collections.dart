@@ -19,7 +19,7 @@ List<dynamic> list5 = ["hello", 10];
 /*---------------------------------------
   set - a collection of unique items
 ----------------------------------------*/
-var set1 = {1, 2, 3, 1, 3};
+var set1 = {1, 2, 3};
 
 Set<String> set2 = {'foo', 'bar', 'span'};
 Set<num> set3 = {1, 2, 3, 4};
@@ -51,45 +51,6 @@ Map<String, Function> map5 = {
 ----------------------------------------*/
 main(List<String> args) {
 
-  // lists
-  list1.add(5);
-
-  list1.forEach((item){
-    print(item);
-  });
-
-  for (var item in list1) {
-    print(item);
-  }
-
-  // sets
-  set1.add(4);
-
-  set1.forEach((item){
-    print(item);
-  });
-
-  for(var item in list1){
-    print(item);
-  }
-
-  // maps
-  map1['key5'] = "value5";
-  map5["hello"](); // hello world
-
-  map1.forEach((key, value){
-    print('$key - $value');
-  });
-
-  // only keys
-  for(var item in map1.keys){
-    print(item);
-    print(map1[item]); // get values
-  }
-
-  // only values
-  for(var value in map1.values){
-    print(value);
-  }
+  print('collections');
 
 }

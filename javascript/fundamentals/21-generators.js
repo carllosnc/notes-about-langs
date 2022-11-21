@@ -2,7 +2,6 @@
   Generators
   https://javascript.info/generators
 */
-
 {
   function* generateSequence() {
     yield 1

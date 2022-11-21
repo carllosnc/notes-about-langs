@@ -1,3 +1,9 @@
 <?php
 
-// typed params
+class Person
+{
+    public function __construct()
+    {
+        echo "person class";
+    }
+}

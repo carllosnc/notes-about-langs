@@ -93,3 +93,28 @@
 
   console.log(z)
 }
+
+// sort
+{
+  const arr = [
+    {
+      name: 'foo',
+      date: 2000,
+    },
+
+    {
+      name: 'bar',
+      date: 1993,
+    },
+
+    {
+      name: 'span',
+      date: 1982,
+    },
+  ]
+
+  arr.sort((a, b) => {
+    if (a.date < b.date) return -1
+    if (a.date > b.date) return 1
+  })
+}

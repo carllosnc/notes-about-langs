@@ -1,5 +1,2 @@
-import test from 'ava'
+//nullish coalscing operator'??'
 
-test('nullish coalscing', t => {
-  t.is(true, true)
-})

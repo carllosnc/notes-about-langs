@@ -1,0 +1,1 @@
+print('factory pattern')

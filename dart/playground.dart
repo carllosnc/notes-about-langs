@@ -1,23 +1,12 @@
-import 'dart:math';
+import 'package:dio/dio.dart';
 
-main(List<String> args) {
+void main() async {
 
-  double anyToDouble(dynamic arg){
-    try {
-      return double.parse(arg.toString());
-    } catch (e) {
-      return 0.0;
-    }
+  try {
+    var response = await Dio().get('https://baconipsum.com/api/?type=meat-and-filler');
+    print(response.data);
+  } catch (e) {
+    print(e);
   }
-
-  print(anyToDouble(0)); // 0.0
-  print(anyToDouble(1)); // 1.0
-  print(anyToDouble(20.0)); // 20.0
-  print(anyToDouble('10')); // 10.0
-  print(anyToDouble(false)); // 0.0
-  print(anyToDouble(true)); // 0.0
-  print(anyToDouble('2000')); // 2000.0
-  print(anyToDouble('hello world')); // 0.0
-  print(anyToDouble(null)); // 0.0
 
 }
