@@ -1,6 +1,6 @@
 <?php
 
-namespace patterns\factory\Factory;
+namespace patterns\factory\FactoryEx1;
 
 abstract class Creator
 {

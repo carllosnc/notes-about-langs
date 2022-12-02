@@ -30,7 +30,7 @@ class Master
 class Person extends Master implements Info
 {
     // static and constans
-    const REFERENCE = "<Class Person>";
+    public const REFERENCE = "<Class Person>";
     public static $description = "Person Class description";
 
     // accessors

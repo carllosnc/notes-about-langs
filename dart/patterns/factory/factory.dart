@@ -1,98 +1,51 @@
 import 'package:test/test.dart';
 
-abstract class Button {
-  String render();
-  void onClick();
-}
-
-abstract class Dialog {
-  Button dialogButton();
-  void render();
-}
-
-class WindowsButton extends Button {
+class Button {
   String _label = '';
 
-  WindowsButton({  label }){
-    _label = label;
+  String render (){
+    return 'Generic button $_label';
   }
 
-  @override
-  void onClick() {
-    print('Click on $_label button');
+  factory Button.windows({ label }){
+    return WindowsButton(label);
   }
+
+  factory Button.linux({ label }){
+    return LinuxButton(label);
+  }
+}
+
+class WindowsButton implements Button {
+  @override
+  String _label = '';
+
+  WindowsButton(this._label);
 
   @override
   String render() {
-    return 'Rendering Windows button: ($_label)';
+    return 'Windows button $_label';
   }
 }
 
-class WindowDialog extends Dialog {
+class LinuxButton implements Button {
   @override
-  Button dialogButton() {
-    return WindowsButton(label: 'WButton');
-  }
-
-  @override
-  void render() {
-    print(dialogButton().render());
-  }
-}
-
-class LinuxButton extends Button {
   String _label = '';
 
-  LinuxButton({ label }){
-    _label = label;
-  }
-
-  @override
-  void onClick() {
-    print('Click on $_label button');
-  }
+  LinuxButton(this._label);
 
   @override
   String render() {
-    return 'Rendering Linux button: ($_label)';
-  }
-}
-
-class LinuxDialog extends Dialog {
-  @override
-  Button dialogButton() {
-    return LinuxButton(label: 'LButton');
-  }
-
-  @override
-  void render() {
-    print(dialogButton().render());
-  }
-}
-
-class Factory {
-  static Dialog create({ type }){
-    if(type == 'windows'){
-      return WindowDialog();
-    }
-
-    if(type == 'linux'){
-      return LinuxDialog();
-    }
-
-    return WindowDialog();
+    return 'Linux button $_label';
   }
 }
 
 void main(List<String> args) {
-  var windowsDialog = Factory.create(type: 'windows');
-  var linuxDialog = Factory.create(type: 'linux');
-
-  test('check instances', (){
+  test('check types', (){
     // ignore: unnecessary_type_check
-    expect(windowsDialog is Dialog, true);
+    expect(Button.windows(label: 'WButton') is Button, true);
 
     // ignore: unnecessary_type_check
-    expect(linuxDialog is Dialog, true);
+    expect(Button.linux(label: 'LButton') is Button, true);
   });
 }
