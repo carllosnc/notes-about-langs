@@ -4,6 +4,7 @@ dependencies:
   test: ^1.9.4
   dart_inquirer: ^1.0.0
   http: ^0.13.5
+  dcli: ^1.36.0
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
