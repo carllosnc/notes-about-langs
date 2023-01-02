@@ -1,24 +1,28 @@
-// working like generatos
-import 'dart:async';
+class Employee {
+  String name;
+  int age;
+  String subject;
+  double salary;
 
-Stream<int> stm1() async* {
-  yield 1;
-  await Future.delayed(Duration(seconds: 1));
-  yield 2;
-  await Future.delayed(Duration(seconds: 1));
-  yield 3;
+  Employee(this.name, this.age, [this.subject = "N/A", this.salary = 0]);
+  Employee.named(
+      {required this.name,
+      required this.age,
+      this.subject = "N/A",
+      this.salary = 0});
+
+  void display() {
+    print("Name: ${name}");
+    print("Name: ${age}");
+    print("Name: ${subject}");
+    print("Name: ${salary}");
+  }
 }
 
 void main(List<String> args) {
-  final controlle = StreamController<int>();
+  Employee employee = Employee("John", 30);
+  Employee employee2 = Employee.named(name: "John", age: 30);
 
-  controlle.sink.add(10);
-  controlle.sink.add(3);
-  controlle.sink.add(5);
-
-  controlle.stream.map((event) => event * 2).listen(
-    (event) {
-      print(event);
-    },
-  );
+  employee.display();
+  employee2.display();
 }

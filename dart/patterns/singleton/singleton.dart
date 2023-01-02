@@ -7,7 +7,7 @@ class SingletonOne {
 
   SingletonOne._();
 
-  factory SingletonOne(){
+  factory SingletonOne() {
     return _instance;
   }
 }
@@ -19,7 +19,7 @@ void main(List<String> args) {
   print(foo.hashCode);
   print(bar.hashCode);
 
-  test('check singleton', (){
+  test('check singleton', () {
     expect(foo.hashCode == bar.hashCode, true);
   });
 }

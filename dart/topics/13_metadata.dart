@@ -7,12 +7,12 @@
 import 'lib/todo.dart';
 
 class Television {
-  void turnOn(){
+  void turnOn() {
     print('turn on');
   }
 
   @deprecated
-  void activate(){
+  void activate() {
     turnOn();
   }
 }
@@ -22,7 +22,7 @@ main(List<String> args) {
   tv.activate();
 
   @Todo('seth', 'make this do something')
-  void doSomethig(){
+  void doSomethig() {
     print('do something');
   }
 

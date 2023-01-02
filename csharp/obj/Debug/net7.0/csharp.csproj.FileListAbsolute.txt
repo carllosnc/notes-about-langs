@@ -1,0 +1,15 @@
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/bin/Debug/net7.0/csharp
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/bin/Debug/net7.0/csharp.deps.json
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/bin/Debug/net7.0/csharp.runtimeconfig.json
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/bin/Debug/net7.0/csharp.dll
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/bin/Debug/net7.0/csharp.pdb
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/csharp.csproj.AssemblyReference.cache
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/csharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/csharp.AssemblyInfoInputs.cache
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/csharp.AssemblyInfo.cs
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/csharp.csproj.CoreCompileInputs.cache
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/csharp.dll
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/refint/csharp.dll
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/csharp.pdb
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/csharp.genruntimeconfig.cache
+/home/carlos/Desktop/projects/open/notes-about-langs/csharp/obj/Debug/net7.0/ref/csharp.dll

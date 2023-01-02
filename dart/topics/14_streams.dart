@@ -1,11 +1,11 @@
 import 'dart:async';
 
 Stream<int> counter() {
-  final controller = StreamController<int>();
+  final controller = StreamController<int>.broadcast();
   var count = 0;
 
   Timer.periodic(Duration(seconds: 1), (timer) {
-    controller.sink.add(count++);
+    controller.add(count++);
   });
 
   return controller.stream;
@@ -34,7 +34,13 @@ Stream<int> getNumbersException() async* {
 }
 
 void main(List<String> args) {
-  var ex1 = getNumbers();
+  var ex1 = counter();
 
-  print(ex1.first);
+  ex1.listen((event) {
+    print('listener1 : ${event}');
+  });
+
+  ex1.listen((event) {
+    print('listener2 : ${event}');
+  });
 }

@@ -4,17 +4,24 @@
   https://www.dartlang.org/guides/language/language-tour#operators
 */
 
-class Mock{
+class Mock {
   String text;
   Mock(this.text);
 
-  up(){ this.text = this.text.toUpperCase(); }
-  zz(){ this.text = 'zz${text}zz'; }
-  xx(){ this.text = 'xx${text}xx'; }
+  up() {
+    this.text = this.text.toUpperCase();
+  }
+
+  zz() {
+    this.text = 'zz${text}zz';
+  }
+
+  xx() {
+    this.text = 'xx${text}xx';
+  }
 }
 
 main(List<String> args) {
-
   // arithmetic operators
 
   assert(2 + 3 == 5);
@@ -59,15 +66,15 @@ main(List<String> args) {
 
   // logical operators
 
-  if(!false){
+  if (!false) {
     print('inverts the following expression');
   }
 
-  if(true && true){
+  if (true && true) {
     print('logical AND');
   }
 
-  if(false || true){
+  if (false || true) {
     print('logical OR');
   }
 
@@ -98,6 +105,4 @@ main(List<String> args) {
 
   Mock bar = Mock('Hello world!');
   print(bar.text);
-
 }
-
