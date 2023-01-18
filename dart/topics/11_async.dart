@@ -6,7 +6,7 @@
 
 Future<String> fn(condition) async {
   if (condition) {
-    return Future.delayed(Duration(seconds: 3), (){
+    return Future.delayed(Duration(seconds: 3), () {
       return "after 3s: Hello world!";
     });
   } else {
@@ -19,13 +19,13 @@ main(List<String> args) async {
 
   // resolving with self method
   fn(true)
-    ..then((res){
+    ..then((res) {
       print(res);
     })
-    ..catchError((error){
+    ..catchError((error) {
       print("Log: $error");
     })
-    ..whenComplete((){
+    ..whenComplete(() {
       print("Future complete");
     });
 

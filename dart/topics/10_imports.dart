@@ -3,7 +3,6 @@ import 'lib/lib2.dart' as lib2;
 import 'lib/lib3.dart' show first;
 
 main(List<String> args) {
-
   // lib1
   Person bob = Person('Bob', 20);
   print(bob.myName());
@@ -17,5 +16,4 @@ main(List<String> args) {
 
   // lib3
   print(first);
-
 }

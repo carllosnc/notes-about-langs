@@ -5,18 +5,10 @@ class Album {
   int id = 0;
   String title = '';
 
-  Album({
-    required this.userId,
-    required this.id,
-    required this.title
-  });
+  Album({required this.userId, required this.id, required this.title});
 
-  factory Album.fromJson(Map<String, dynamic> json){
-    return Album(
-      userId: json['userId'],
-      id: json['id'],
-      title: json['title']
-    );
+  factory Album.fromJson(Map<String, dynamic> json) {
+    return Album(userId: json['userId'], id: json['id'], title: json['title']);
   }
 }
 
@@ -29,7 +21,6 @@ void main(List<String> args) async {
     items.forEach((element) {
       print(element.title);
     });
-
   } catch (e) {
     print(e);
   }

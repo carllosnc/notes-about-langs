@@ -4,7 +4,7 @@ class Notification {
   DateTime timestamp = DateTime.now();
 
   Notification(this.message, this.timestamp);
-  Notification.forNow(this.message){
+  Notification.forNow(this.message) {
     timestamp = new DateTime.now();
   }
 }
@@ -13,16 +13,16 @@ class Notification {
 class Observable {
   List<Observer> _observers = [];
 
-  Observable(List<Observer> observers){
+  Observable(List<Observer> observers) {
     _observers = observers;
   }
 
-  void registerObserver(Observer observer){
+  void registerObserver(Observer observer) {
     _observers.add(observer);
   }
 
-  void notifyObservers(Notification notification){
-    for(var observer in _observers){
+  void notifyObservers(Notification notification) {
+    for (var observer in _observers) {
       observer.notify(notification);
     }
   }
@@ -34,7 +34,7 @@ class Observer {
 
   Observer(this.name);
 
-  void notify(Notification notification){
+  void notify(Notification notification) {
     print('Notification sended to: $name');
   }
 }
@@ -42,7 +42,7 @@ class Observer {
 class CoffeMaker extends Observable {
   CoffeMaker(List<Observer> observers) : super(observers);
 
-  void brew(){
+  void brew() {
     print('Brewing the coffee...');
     notifyObservers(Notification.forNow("coffee's done"));
   }

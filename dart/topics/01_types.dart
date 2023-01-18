@@ -5,7 +5,6 @@
   https://www.dartlang.org/guides/language/language-tour#enumerated-types
 */
 
-
 /*---------------------------------------
   built-in types
 ----------------------------------------*/
@@ -14,14 +13,14 @@ num b = 10;
 int c = 10;
 double d = 20.1;
 bool e = true;
-Function f = (arg){
+Function f = (arg) {
   print('a simple function');
 };
 
 var g = "A simple variable";
 const i = "compile-time constant";
 final j = "A contant variable at run time";
-final String k  = "typing a final variable";
+final String k = "typing a final variable";
 
 // can change the type.
 dynamic h = "A simple dynamic variable";

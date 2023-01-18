@@ -4,16 +4,15 @@ EXCEPTIONS
 https://www.dartlang.org/guides/language/language-tour#control-flow-statements
 */
 
-basic(){
+basic() {
   throw Exception("Basic: A simple exceptions");
 }
 
-typed(){
+typed() {
   throw FormatException('Expected as least 1 section');
 }
 
 main(List<String> args) {
-
   // basic
   try {
     basic();
@@ -32,14 +31,13 @@ main(List<String> args) {
   try {
     typed();
     basic();
-  } on FormatException catch (e){
+  } on FormatException catch (e) {
     print('Typed -> $e');
-  } on Exception catch (e){
+  } on Exception catch (e) {
     print('Basic -> $e');
-  } catch (e){
+  } catch (e) {
     print('Another exeption -> $e');
   } finally {
     print('Finnaly');
   }
-
 }

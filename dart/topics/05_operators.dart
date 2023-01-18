@@ -79,7 +79,6 @@ main(List<String> args) {
   }
 
   // conditional expressions
-
   var value;
 
   var exp1 = value ?? "hello world";
@@ -87,7 +86,6 @@ main(List<String> args) {
   print('$exp1');
 
   // cascade notation
-
   Mock foo = Mock('Hello world');
   foo
     ..up()

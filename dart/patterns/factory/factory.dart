@@ -3,15 +3,15 @@ import 'package:test/test.dart';
 class Button {
   String _label = '';
 
-  String render (){
+  String render() {
     return 'Generic button $_label';
   }
 
-  factory Button.windows({ label }){
+  factory Button.windows({label}) {
     return WindowsButton(label);
   }
 
-  factory Button.linux({ label }){
+  factory Button.linux({label}) {
     return LinuxButton(label);
   }
 }
@@ -41,7 +41,7 @@ class LinuxButton implements Button {
 }
 
 void main(List<String> args) {
-  test('check types', (){
+  test('check types', () {
     // ignore: unnecessary_type_check
     expect(Button.windows(label: 'WButton') is Button, true);
 

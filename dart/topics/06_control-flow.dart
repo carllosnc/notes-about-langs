@@ -5,19 +5,18 @@
 */
 
 main(List<String> args) {
-
   // if and else
-  if(false){
+  if (false) {
     print('if');
-  }else if(true){
+  } else if (true) {
     print('else is');
-  }else{
+  } else {
     print('else');
   }
 
   // switch
   var command = 'OPEN';
-    switch (command) {
+  switch (command) {
     case 'CLOSED':
       print('close');
       break;
@@ -38,28 +37,27 @@ main(List<String> args) {
   }
 
   // for loops
-  for(var i = 0; i <= 5; i++){
+  for (var i = 0; i <= 5; i++) {
     print(i);
   }
 
   // for iterators
-  for(var i in [1, 2, 3]){
+  for (var i in [1, 2, 3]) {
     print('Iterator - $i');
   }
 
   // while
   var x = 0;
-  while(x <= 10){
+  while (x <= 10) {
     print(x++);
 
-    if(x == 5 ){
+    if (x == 5) {
       break;
     }
   }
 
   // do while
-  do{
+  do {
     print('One time');
-  }while(false);
-
+  } while (false);
 }

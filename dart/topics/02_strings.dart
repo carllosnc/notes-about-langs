@@ -52,7 +52,5 @@ String mult3 = """
 """;
 
 main(List<String> args) {
-
   print('string');
-
 }

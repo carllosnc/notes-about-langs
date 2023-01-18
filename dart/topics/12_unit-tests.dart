@@ -1,14 +1,13 @@
 import "package:test/test.dart";
 
 void main(List<String> args) async {
-
   // simple tests
-  test("String.split() splits the string on the delimiter", (){
+  test("String.split() splits the string on the delimiter", () {
     var string = "foo,bar,span";
     expect(string.split(","), equals(["foo", "bar", "span"]));
   });
 
-  test("String.trim removes surrounding whitespace", (){
+  test("String.trim removes surrounding whitespace", () {
     var string = " foo ";
     expect(string.trim(), equals("foo"));
   });
@@ -25,13 +24,8 @@ void main(List<String> args) async {
   });
 
   // matchers
-  test(".split() splits the string on the delimiter", (){
-    expect("foo,bar,baz", allOf([
-      contains("foo"),
-      isNot(startsWith("bar")),
-      endsWith("baz")
-    ]));
+  test(".split() splits the string on the delimiter", () {
+    expect("foo,bar,baz",
+        allOf([contains("foo"), isNot(startsWith("bar")), endsWith("baz")]));
   });
-
 }
-

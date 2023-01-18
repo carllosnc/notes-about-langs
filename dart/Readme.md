@@ -10,6 +10,7 @@
 + [Tutorial Point Dart](https://www.tutorialspoint.com/dart_programming/index.htm)
 + [How to install](https://www.dartlang.org/tools/sdk#install)
 + [Pub - DartPackages](https://pub.dartlang.org/)
++ [Patterns](https://scottt2.github.io/design-patterns-in-dart/)
 
 ---
 Licensed under the MIT License

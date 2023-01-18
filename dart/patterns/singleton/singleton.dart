@@ -1,5 +1,3 @@
-// https://stackoverflow.com/questions/54057958/comparing-ways-to-create-singletons-in-dart
-
 import 'package:test/test.dart';
 
 class SingletonOne {

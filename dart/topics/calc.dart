@@ -18,14 +18,12 @@ class Calc {
 
 final PI = 3.14159265359;
 
-int sum(int a, int b){
+int sum(int a, int b) {
   return a + b;
 }
 
 class Console {
-  static log(String arg){
+  static log(String arg) {
     print(arg);
   }
 }
-
-

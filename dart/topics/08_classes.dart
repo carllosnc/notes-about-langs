@@ -21,7 +21,7 @@ class Point1 {
   var x;
   var y;
 
-  Point1(num x, num y){
+  Point1(num x, num y) {
     this.x = x;
     this.y = y;
   }
@@ -45,8 +45,14 @@ class Point3 {
   Point3.string(String this.x, String this.y);
   Point3.integer(int this.x, int this.y);
   Point3.number(num this.x, int this.y);
-  Point3.origin(){ x = 0; y = 0; }
-  Point3.middle(){ x = 10; y = 10; }
+  Point3.origin() {
+    x = 0;
+    y = 0;
+  }
+  Point3.middle() {
+    x = 10;
+    y = 10;
+  }
 }
 
 /*---------------------------------------
@@ -62,7 +68,7 @@ class Person {
 class Programmer extends Person {
   String language;
 
-  Programmer(String name, int age, String this.language): super(name, age);
+  Programmer(String name, int age, String this.language) : super(name, age);
 }
 
 /*---------------------------------------
@@ -79,7 +85,9 @@ class People {
 class Car {
   var name, age;
 
-  Car(name, age) : name = name, age = age {
+  Car(name, age)
+      : name = name,
+        age = age {
     print('Car initialized');
   }
 }
@@ -111,12 +119,12 @@ class ImmutablePoint {
 /*---------------------------------------
   methods
 ----------------------------------------*/
-class Foo{
-  int first(){
+class Foo {
+  int first() {
     return 1;
   }
 
-  String second(){
+  String second() {
     return '2';
   }
 }
@@ -151,7 +159,7 @@ abstract class Doer {
 }
 
 class EffectiveDoer extends Doer {
-  void doSomething(){
+  void doSomething() {
     print('Doing something ...');
   }
 }
@@ -159,14 +167,14 @@ class EffectiveDoer extends Doer {
 /*---------------------------------------
   extending a class
 ----------------------------------------*/
-class Persona{
+class Persona {
   String name;
   int age;
 
   Persona(this.name, this.age);
 }
 
-class Worker extends Persona{
+class Worker extends Persona {
   String job;
 
   Worker(String name, int age, String this.job) : super(name, age);
@@ -176,14 +184,14 @@ class Worker extends Persona{
   overriding members
 ----------------------------------------*/
 class Television {
-  String turnOn(){
+  String turnOn() {
     return 'Method by television class';
   }
 }
 
-class SmartTelevision extends Television{
+class SmartTelevision extends Television {
   @override
-  String turnOn(){
+  String turnOn() {
     return 'Method Overrided by SmartTelevision class';
   }
 }
@@ -191,14 +199,14 @@ class SmartTelevision extends Television{
 /*---------------------------------------
   mixins
 ----------------------------------------*/
-mixin Musical{
-  void playPiano(){
+mixin Musical {
+  void playPiano() {
     print('♫♪♫ Playing piano! ♫♪♫');
   }
 }
 
-mixin MusicalPerformer{
-  void playGuitar(){
+mixin MusicalPerformer {
+  void playGuitar() {
     print('♫♫♫ Playing guitar! ♪♪♪');
   }
 }
@@ -216,15 +224,13 @@ class Storage {
   static String type = 'fruits';
   static List<String> listFruits = const ['Apple', 'Orangle', 'Kiwifruit'];
 
-  static showFruits(){
-    listFruits.forEach((item){
+  static showFruits() {
+    listFruits.forEach((item) {
       print(item);
     });
   }
 }
 
 main(List<String> args) {
-
   print('classes');
-
 }

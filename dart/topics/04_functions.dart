@@ -7,28 +7,28 @@
 /*---------------------------------------
   basic
 ----------------------------------------*/
-fn1(){
+fn1() {
   return 'a simple function';
 }
 
-fn2(arg){
+fn2(arg) {
   return arg;
 }
 
 /*---------------------------------------
   typed
 ----------------------------------------*/
-String typed1(){
+String typed1() {
   return 'typed function';
 }
 
-Function typed2(){
-  return (){
+Function typed2() {
+  return () {
     return "Returning another function";
   };
 }
 
-void typed3(){
+void typed3() {
   print('no return');
 }
 
@@ -38,43 +38,43 @@ String short() => "Short syntax to 'return exp;'";
 /*---------------------------------------
   optional named parameters
 ----------------------------------------*/
-optional({String foo = 'foo', String bar = 'bar'}){
+optional({String foo = 'foo', String bar = 'bar'}) {
   print('$foo -> $bar');
 }
 
 /*---------------------------------------
   optional positional parameters
 ----------------------------------------*/
-optional_positional(String foo, String bar, [String span = 'span']){
+optional_positional(String foo, String bar, [String span = 'span']) {
   print('$foo $bar $span');
 }
 
 /*---------------------------------------
   default named parameters value
 ----------------------------------------*/
-default1({String hello = "hello",  String world = "world"}){
+default1({String hello = "hello", String world = "world"}) {
   print('$hello $world');
 }
 
-default2({List<String> list = const ['1', '2', '3']}){
+default2({List<String> list = const ['1', '2', '3']}) {
   print(list);
 }
 
 /*---------------------------------------
   function as a first-class object
 ----------------------------------------*/
-firstClass(fn){
+firstClass(fn) {
   fn('function as a first-class object');
 }
 
 /*---------------------------------------
   lexical scope
 ----------------------------------------*/
-scope(){
+scope() {
   // foo scope variable
   var value1 = 'foo value';
 
-  bar(){
+  bar() {
     // bar scope variable
     var value2 = 'bar value';
 
@@ -93,7 +93,7 @@ scope(){
   outside of its original scope.
 ----------------------------------------*/
 
-Function makeAdder(num addBy){
+Function makeAdder(num addBy) {
   return (num i) => addBy + i;
 }
 
@@ -101,10 +101,9 @@ Function makeAdder(num addBy){
   main function
 ----------------------------------------*/
 main(List<String> args) {
-
   // function as a parameter
   // anon function
-  firstClass((arg){
+  firstClass((arg) {
     print(arg);
   });
 
@@ -118,7 +117,7 @@ main(List<String> args) {
 
   // default named parameters value
   default1();
-  default1(hello:"Olá", world:"mundo");
+  default1(hello: "Olá", world: "mundo");
 
   default2();
 
@@ -131,6 +130,4 @@ main(List<String> args) {
 
   add2(2); // 4
   add4(2); // 6
-
 }
-

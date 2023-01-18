@@ -40,7 +40,6 @@ class WindowsDialog extends Dialog {
 }
 
 void main(List<String> args) {
-
   // this dialog can receive multiple buttons
   var dialog = WindowsDialog(button: LinuxButton());
 
