@@ -1,9 +1,9 @@
 <?php
 
-class Person
-{
-    public function __construct()
-    {
-        echo "person class";
-    }
-}
+$list = [6, -2, 2, -7];
+
+sort($list);
+
+foreach ($list as $item) {
+    echo($item . ',');
+};
