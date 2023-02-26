@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3172e014-6f0b-4826-87c9-9dfe92762069" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../csharp/obj/Debug/net7.0/csharp.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/obj/Debug/net7.0/csharp.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/obj/Debug/net7.0/csharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/obj/Debug/net7.0/csharp.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dart/playground.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../dart/playground.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript/playground.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/playground.ts" afterDir="false" />
-    </list>
+    <list default="true" id="3172e014-6f0b-4826-87c9-9dfe92762069" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,18 +29,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/carlos/Desktop/projects/open/notes-about-langs/kotlin",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../flutter_components" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
