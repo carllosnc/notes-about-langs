@@ -4,7 +4,6 @@
   },
   "name": "typescript-notes",
   "description": "",
-  "type": "module",
   "version": "1.0.0",
   "main": "playground.ts",
   "scripts": {

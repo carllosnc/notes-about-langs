@@ -1,4 +1,4 @@
-package com.example.topics
+package com.example.topics.primitives
 
 fun primitiveTypes() {
     val a: Int = 1
@@ -17,4 +17,3 @@ fun primitiveTypes() {
     println("f = $f")
     println("g = $g")
 }
-

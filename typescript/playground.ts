@@ -1,1 +1,3 @@
-//function to add two numbers
+function foo() {
+  console.log("Hello world!");
+}

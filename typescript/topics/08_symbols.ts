@@ -11,20 +11,20 @@
   basic declaration
 ----------------------------------------*/
 {
-  let sym = Symbol()
-  let sym2 = Symbol('key')
+  let sym = Symbol();
+  let sym2 = Symbol("key");
 
-  console.log(sym, sym2)
+  console.log(sym, sym2);
 }
 
 /*---------------------------------------
   symbols are immutable, and unique
 ----------------------------------------*/
 {
-  let sym1 = Symbol('key')
-  let sym2 = Symbol('key')
+  let sym1 = Symbol("key");
+  let sym2 = Symbol("key");
 
-  console.log(sym1 === sym2) // false
+  console.log(sym1 === sym2); // false
 }
 
 /*---------------------------------------
@@ -32,13 +32,13 @@
   used as keys for object properties
 ----------------------------------------*/
 {
-  const sym = Symbol()
+  const sym = Symbol();
 
   let obj = {
-    [sym]: 'value',
-  }
+    [sym]: "value",
+  };
 
-  console.log(obj[sym])
+  console.log(obj[sym]);
 }
 
 /*---------------------------------------
@@ -48,16 +48,16 @@
   member
 ----------------------------------------*/
 {
-  const getClassNameSymbol = Symbol()
+  const getClassNameSymbol = Symbol();
 
   class C {
     [getClassNameSymbol]() {
-      return 'C'
+      return "C";
     }
   }
 
-  let c = new C()
-  let className = c[getClassNameSymbol]()
+  let c = new C();
+  let className = c[getClassNameSymbol]();
 
-  console.log(className)
+  console.log(className);
 }

@@ -1,25 +1,8 @@
-package com.example.topics
+package com.example.topics.controlflow
 
-fun conditions() {
-    val a = 1
-    val b = 2
-    val max: Int
-
-    //a basic if
-    if (a > b) {
-        max = a
-    } else {
-        max = b
-    }
-}
-
-fun asExpression() {
-    val a = 1
-    val b = 2
-    val max = if (a > b) a else b
-
-    val maxLimit = 1
-    val maxOrLimit = if (maxLimit > a) maxLimit else if (a > b) a else b
+//function that return max value
+fun max(a: Int, b: Int): Int {
+    return if (a > b) a else b
 }
 
 fun whenExpression() {
@@ -35,9 +18,7 @@ fun whenExpression() {
     }
 }
 
-fun forLoop() {
-    val items = listOf("apple", "banana", "kiwi")
-
-    //for loop one line
-    for (item in items) println(item)
+fun main() {
+    println(max(1, 2))
+    whenExpression()
 }

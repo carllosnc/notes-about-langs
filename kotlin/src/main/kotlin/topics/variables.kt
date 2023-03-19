@@ -1,15 +1,20 @@
-package com.example.topics
+package com.example.topics.variables
 
-const val e: Int = 5
+fun main() {
+    //var = mutable variables
+    //val = imutable variables
 
-fun variableDeclaration() {
-    //variable declaration
     val a: Int = 1
     val b = 2
     val c: Int
     c = 3
-    var d: Int? = null
+    val d: Int? = null
 
-    println("a = $a, b = $b, c = $c, c = $d")
+    var x = 5
+    x += 1
+
+    println("a = $a")
+    println("b = $b")
+    println("c = $c")
+    println("x = $x")
 }
-

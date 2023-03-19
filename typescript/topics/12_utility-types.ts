@@ -3,22 +3,22 @@
 ----------------------------------------*/
 {
   interface Todo {
-    title: string
-    description: string
+    title: string;
+    description: string;
   }
 
   function updateTodo(todo: Todo, fieldsUpdate: Partial<Todo>): Todo {
-    return { ...todo, ...fieldsUpdate }
+    return { ...todo, ...fieldsUpdate };
   }
 
   const todo1: Todo = {
-    title: 'organize desk',
-    description: 'clear clutter',
-  }
+    title: "organize desk",
+    description: "clear clutter",
+  };
 
   const todo2 = updateTodo(todo1, {
-    description: 'throw out trash',
-  })
+    description: "throw out trash",
+  });
 }
 
 /*---------------------------------------
@@ -26,10 +26,10 @@
 ----------------------------------------*/
 {
   interface Props {
-    a?: number
-    b?: string
+    a?: number;
+    b?: string;
   }
 
-  const obj1: Props = { a: 5 }
-  const obj2: Required<Props> = { a: 5, b: '10' }
+  const obj1: Props = { a: 5 };
+  const obj2: Required<Props> = { a: 5, b: "10" };
 }

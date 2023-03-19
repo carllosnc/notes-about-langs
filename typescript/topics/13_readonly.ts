@@ -3,7 +3,7 @@
 ----------------------------------------*/
 
 {
-  const arr: Readonly<string[]> = ['1', '2', '3']
+  const arr: Readonly<string[]> = ["1", "2", "3"];
 }
 
 /*---------------------------------------
@@ -12,10 +12,10 @@
 
 {
   const obj: Readonly<{ name: string; age: number; lang: string }> = {
-    name: 'John Doe',
+    name: "John Doe",
     age: 20,
-    lang: 'javascript',
-  }
+    lang: "javascript",
+  };
 }
 
 /*---------------------------------------
@@ -24,12 +24,12 @@
 
 {
   class Employee {
-    readonly code: number
-    readonly name: string
+    readonly code: number;
+    readonly name: string;
 
     constructor(name: string, code: number) {
-      this.name = name
-      this.code = code
+      this.name = name;
+      this.code = code;
     }
   }
 }
@@ -40,12 +40,12 @@
 
 {
   interface IEmployee {
-    readonly code: number
-    readonly name: string
+    readonly code: number;
+    readonly name: string;
   }
 
   let obj: IEmployee = {
     code: 1,
-    name: 'John Doe',
-  }
+    name: "John Doe",
+  };
 }

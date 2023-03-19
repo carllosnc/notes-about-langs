@@ -1,4 +1,4 @@
-package com.example.topics
+package com.example.topics.check
 
 fun checkCast() {
     var st: String = "hello world";

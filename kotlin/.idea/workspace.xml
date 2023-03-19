@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3172e014-6f0b-4826-87c9-9dfe92762069" name="Changes" comment="" />
+    <list default="true" id="3172e014-6f0b-4826-87c9-9dfe92762069" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../typescript/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../typescript/playground.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/playground.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../typescript/topics/08_symbols.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/topics/08_symbols.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../typescript/topics/09_iterators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/topics/09_iterators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../typescript/topics/12_utility-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/topics/12_utility-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../typescript/topics/13_readonly.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/topics/13_readonly.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,13 +40,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "last_opened_file_path": "/home/carlos/Desktop/projects/open/notes-about-langs/kotlin",
-    "settings.editor.selected.configurable": "com.daniel_espinoza.inline_error.settings.InlineErrorConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/topics" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.LoopsKt">
+    <configuration name="CollectionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.arrays.CollectionsKt" />
+      <module name="learn-kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.topics.functions.FunctionsKt" />
+      <module name="learn-kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoopsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.topics.loops.LoopsKt" />
+      <module name="learn-kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.MainKt" />
       <module name="learn-kotlin" />
@@ -46,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Primitive_typesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.topics.Primitive_typesKt" />
+    <configuration name="StringsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.topics.strings.StringsKt" />
       <module name="learn-kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -55,8 +90,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.LoopsKt" />
+        <item itemvalue="Kotlin.StringsKt" />
+        <item itemvalue="Kotlin.FunctionsKt" />
+        <item itemvalue="Kotlin.CollectionsKt" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Kotlin.Primitive_typesKt" />
       </list>
     </recent_temporary>
   </component>
@@ -70,6 +108,17 @@
       <updated>1677126174598</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
