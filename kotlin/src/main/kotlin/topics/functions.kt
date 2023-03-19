@@ -41,6 +41,16 @@ fun twoCallbacks(callback1: (Int, Int) -> Unit, callback2: (Int) -> Unit) {
     callback2(3)
 }
 
+//example infix function
+infix fun Int.sum(a: Int): Int {
+    return this + a
+}
+
+//infix function using strings
+infix fun String.add(other: String): String {
+    return this + other
+}
+
 fun main() {
     //overload functions
     println(add(1, 2))
@@ -51,4 +61,10 @@ fun main() {
 
     //calling a function with two callbacks
     twoCallbacks({ a, b -> println(a + b) }){ println(it) }
+
+    //call infix function
+    println(1 sum 2)
+
+    //call infix function using strings
+    println("Hello" add "-" add "World")
 }

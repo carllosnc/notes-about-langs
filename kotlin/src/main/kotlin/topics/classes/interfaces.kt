@@ -1,20 +1,21 @@
-package com.example.topics.classes
+package com.example.topics.classes.interfaces
 
-interface IPerson {
+interface Human {
     val name: String
-    val lastname: String
     val age: Int
+    fun printInfo()
+}
 
-    val fullName: String
-        get() = "$name $lastname"
-
-    fun helloWorld() {
-        println("Hello World")
+class Person(
+    override val name: String,
+    override val age: Int,
+) : Human {
+    override fun printInfo() {
+        println("Name: $name, Age: $age")
     }
 }
 
-class Student(
-    override val name: String,
-    override val age: Int,
-    override val lastname: String,
-) : IPerson
+fun main() {
+    val person = Person("John", 30)
+    person.printInfo()
+}
