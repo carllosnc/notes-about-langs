@@ -1,23 +1,43 @@
-package com.example.topics.classes
+package com.example.topics.classes.object_expression
 
-val person = object {
-    val name = "John"
-    val lastname = "Doe"
-    val age = 30
-
-    fun showInfo() {
-        println("Name: $name")
-        println("Lastname: $lastname")
-        println("Age: $age")
+interface Human {
+    val name: String
+    val age: Int
+    fun showInfo(){
+        println("name: $name, age: $age")
     }
 }
 
-open class A(val x: Int){
-    public open val y: Int = x
+//car class
+class Car(val name: String, val year: Int){
+    private val owner: Human = object : Human {
+        override val name: String = "John"
+        override val age: Int = 21
+    }
+
+    fun showOwner(){
+        println("name: ${owner.name}, age: ${owner.age}")
+    }
 }
 
-interface B{}
 
-val ab: A = object : A(1), B{
-    override val y = 15
+fun main() {
+    val person = object : Human {
+        override val name: String = "John"
+        override val age: Int = 21
+    }
+
+    val hero = object : Human {
+        override val name: String = "Batman"
+        override val age: Int = 30
+        val superpower: String = "Money"
+    }
+
+    val car = Car("BMW", 2020)
+
+    car.showOwner()
+
+    person.showInfo()
+    hero.showInfo()
 }
+

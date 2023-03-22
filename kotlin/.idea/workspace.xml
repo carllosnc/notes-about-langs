@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3172e014-6f0b-4826-87c9-9dfe92762069" name="Changes" comment="" />
+    <list default="true" id="3172e014-6f0b-4826-87c9-9dfe92762069" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../dart/playground.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../dart/playground.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,14 +46,7 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin/topics" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="ConstructorsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.topics.classes.constructors.ConstructorsKt" />
-      <module name="learn-kotlin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Null_safetyKt">
     <configuration name="Data_classesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.topics.classes.data.Data_classesKt" />
       <module name="learn-kotlin" />
@@ -73,6 +68,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Null_safetyKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.topics.Null_safetyKt" />
+      <module name="learn-kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Sealed_classesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.topics.classes.sealed.Sealed_classesKt" />
       <module name="learn-kotlin" />
@@ -82,11 +84,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Null_safetyKt" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Kotlin.Data_classesKt" />
         <item itemvalue="Kotlin.Sealed_classesKt" />
         <item itemvalue="Kotlin.FunctionsKt" />
-        <item itemvalue="Kotlin.Data_classesKt" />
-        <item itemvalue="Kotlin.ConstructorsKt" />
       </list>
     </recent_temporary>
   </component>

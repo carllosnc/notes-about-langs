@@ -1,16 +1,16 @@
 package com.example.topics.classes.inheritance
 
-//primary constructor
-class Point(var x: Int, var y: Int){
-    //secondary constructor
-    constructor(x: String, y: String) : this(x.toInt(), y.toInt())
-    constructor(x: Double, y: Double) : this(x.toInt(), y.toInt())
-
-    init {
-        println("Point created at ($x, $y)")
+open class Person(
+    private val name: String,
+    private val age: Int,
+){
+    fun getName(): String {
+        return name
+    }
+    fun setName(name: String): String {
+        return this.name
     }
 }
-
 
 fun main() {
 

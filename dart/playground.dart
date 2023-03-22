@@ -1,30 +1,42 @@
-class Service {
-  task() {
-    return 'task by service';
-  }
-}
+class Person {
+  final String name;
+  final int age;
+  final String address;
 
-class Action implements Service {
-  @override
-  task() {
-    return 'task by action';
-  }
-}
-
-class Client {
-  Service sv;
-
-  Client({
-    required this.sv,
+  Person({
+    required this.name,
+    required this.age,
+    required this.address,
   });
 
-  show() {
-    print(sv.task());
+  Person copyWith({
+    String? name,
+    int? age,
+    String? address,
+  }) {
+    return Person(
+      name: name ?? this.name,
+      age: age ?? this.age,
+      address: address ?? this.address,
+    );
+  }
+
+  void printValues() {
+    print('Name: $name');
+    print('Age: $age');
+    print('Address: $address');
   }
 }
 
 void main(List<String> args) {
-  var client = Client(sv: Action());
+  final person = Person(
+    name: 'John',
+    age: 20,
+    address: '123 Main St',
+  );
 
-  client.show();
+  final copy = person.copyWith(name: 'Jane', age: 21);
+
+  person.printValues();
+  copy.printValues();
 }

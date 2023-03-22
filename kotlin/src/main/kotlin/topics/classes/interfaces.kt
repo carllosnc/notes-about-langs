@@ -18,4 +18,13 @@ class Person(
 fun main() {
     val person = Person("John", 30)
     person.printInfo()
+
+    val hero = object : Human {
+        override val name: String = "Batman"
+        override val age: Int = 30
+        val superpower: String = "Money"
+        override fun printInfo() {
+            println("Name: $name, Age: $age, Superpower: $superpower")
+        }
+    }
 }
