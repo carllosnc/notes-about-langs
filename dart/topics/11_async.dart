@@ -22,11 +22,11 @@ main(List<String> args) async {
     ..then((res) {
       print(res);
     })
-    ..catchError((error) {
-      print("Log: $error");
-    })
     ..whenComplete(() {
       print("Future complete");
+    })
+    ..catchError((error) {
+      return 'Generic error';
     });
 
   // resolving with async/await

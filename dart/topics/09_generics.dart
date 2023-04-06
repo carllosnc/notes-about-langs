@@ -8,8 +8,6 @@
   generic methods
 ----------------------------------------*/
 T check<T>(T arg) {
-  print(arg is T);
-
   return arg;
 }
 
