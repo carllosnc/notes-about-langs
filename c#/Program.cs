@@ -2,6 +2,7 @@
 {
   static void Main(string[] args)
   {
-    Console.WriteLine("Hello World!");
+    int[] array = new int[5];
+    System.Console.WriteLine(array[0]);
   }
 }

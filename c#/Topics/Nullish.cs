@@ -3,7 +3,7 @@ namespace Nullish
   //class with optional parameter
   class Optional
   {
-    static void Main(string[] args)
+    static void Example(string[] args)
     {
       //call method with optional parameter
       Example("Hello World!");
@@ -20,7 +20,7 @@ namespace Nullish
 
   class Nullish
   {
-    static void Main(string[] args)
+    static void Example(string[] args)
     {
       //create new string
       string? s = null;
