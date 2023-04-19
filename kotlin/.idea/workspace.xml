@@ -1,34 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="NONE" />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3172e014-6f0b-4826-87c9-9dfe92762069" name="Changes" comment="">
+    <list default="true" id="701d5a6d-b806-4bf5-8b95-b4aa67bd6a34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/topics/Conditions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/topics/Exceptions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/topics/Lambdas.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/topics/Types.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Patterns/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Patterns/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Loops.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Loops.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dart/playground.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../dart/playground.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-kotlin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/check-cast.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/constructors.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/data-classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/delegation.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/extension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/inheritance.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/inner-classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/interfaces.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/object-expression.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/operator-overload.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/sealed-classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/type-aliases.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/collections.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/control-flow.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/examples/fetch-data.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/topics/functions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/loops.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/topics/loops.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/null-safety.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/primitive-types.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/strings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/topics/strings.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/variables.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../typescript/playground.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/playground.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../typescript/topics/10_namespaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/topics/10_namespaces.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
-        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2M7km6dC9wbPFZlBPnOiHx4UtD4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2Oa0lq58swtUbIZzkPwdgPyv1Sa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,87 +78,56 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/carlos/Desktop/projects/open/notes-about-langs/kotlin&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/kotlin/topics" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="Data_classesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.topics.classes.data.Data_classesKt" />
-      <module name="learn-kotlin" />
+  <component name="RunManager" selected="Kotlin.LambdasKt">
+    <configuration name="FunctionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learn.kotlin.topics.functions.FunctionsKt" />
+      <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.topics.functions.FunctionsKt" />
-      <module name="learn-kotlin" />
+    <configuration name="LambdasKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learn.kotlin.topics.lambdas.LambdasKt" />
+      <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.MainKt" />
-      <module name="learn-kotlin" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Null_safetyKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.topics.Null_safetyKt" />
-      <module name="learn-kotlin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sealed_classesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.topics.classes.sealed.Sealed_classesKt" />
-      <module name="learn-kotlin" />
+    <configuration name="StringsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learn.kotlin.topics.strings.StringsKt" />
+      <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Kotlin.Null_safetyKt" />
-        <item itemvalue="Kotlin.Data_classesKt" />
-        <item itemvalue="Kotlin.Sealed_classesKt" />
+        <item itemvalue="Kotlin.LambdasKt" />
         <item itemvalue="Kotlin.FunctionsKt" />
+        <item itemvalue="Kotlin.StringsKt" />
+        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3172e014-6f0b-4826-87c9-9dfe92762069" name="Changes" comment="" />
-      <created>1677126174598</created>
+      <changelist id="701d5a6d-b806-4bf5-8b95-b4aa67bd6a34" name="Changes" comment="" />
+      <created>1681783542496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677126174598</updated>
+      <updated>1681783542496</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

@@ -1,21 +1,14 @@
-class Person {
-  String name;
-  int age;
-
-  Person({required this.name, required this.age});
-
-  Person copyWith({String? name, int? age}) {
-    return Person(name: name ?? this.name, age: age ?? this.age);
-  }
-
-  @override
-  String toString() {
-    return 'Person{name: $name, age: $age}';
-  }
+Future<String> getMessage({required String message, required int time}) async {
+  return Future.delayed(Duration(seconds: time), () {
+    return message;
+  });
 }
 
 void main(List<String> args) {
-  Person person = Person(name: 'John', age: 20);
-  Person clone = person.copyWith(name: 'Jack');
-  print(clone.toString());
+  var message1 = getMessage(message: 'Hello', time: 2);
+  var message2 = getMessage(message: 'World', time: 3);
+
+  Future.forEach([message1, message2], (message) {
+    print(message);
+  });
 }

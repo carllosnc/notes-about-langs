@@ -9,32 +9,32 @@
 ----------------------------------------*/
 namespace Resources {
   export interface someInterface {
-    name: string
-    value: number
-    list: string[]
+    name: string;
+    value: number;
+    list: string[];
   }
 
   export class entity {
-    private _someValue: number
+    private _someValue: number;
 
     constructor(someValue: number) {
-      this._someValue = someValue
+      this._someValue = someValue;
     }
 
     get someValue() {
-      return this._someValue
+      return this._someValue;
     }
 
     set someValue(newValue: number) {
-      this._someValue = newValue
+      this._someValue = newValue;
     }
   }
 
-  export const value = 'some value'
-  export const values: number[] = [1, 2, 3, 4, 5]
+  export const value = "some value";
+  export const values: number[] = [1, 2, 3, 4, 5];
 
   export function method() {
-    return 'some function'
+    return "some function";
   }
 }
 
@@ -44,38 +44,38 @@ namespace Resources {
 namespace Foo {
   export namespace Bar {
     export namespace Span {
-      export const value = 'hello world'
+      export const value = "hello world";
     }
   }
 }
 
-;(function main() {
-  console.log(Resources)
-  console.log(Foo.Bar.Span.value)
-})()
+(function main() {
+  console.log(Resources);
+  console.log(Foo.Bar.Span.value);
+})();
 
 /*---------------------------------------
   example
 ----------------------------------------*/
 
 namespace Calc {
-  const number: number = 3.14
+  const number: number = 3.14;
 
   export function sum(a: number, b: number): number {
-    return a + b
+    return a + b;
   }
 
   export function sub(a: number, b: number): number {
-    return a - b
+    return a - b;
   }
 
   export function mult(a: number, b: number): number {
-    return a * b
+    return a * b;
   }
 
   export function div(a: number, b: number): number {
-    return a / b
+    return a / b;
   }
 }
 
-console.log(Calc)
+console.log(Calc);

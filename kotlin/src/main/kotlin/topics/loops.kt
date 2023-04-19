@@ -1,22 +1,64 @@
-package com.example.topics.loops
+package learn.kotlin.topics.loops
 
-//list of numbers
-val list = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-val range = 1..10
-val range2 = 'a'..'z'
+val array = arrayOf(1, 2, 3, 4, 5)
 
 fun main() {
-    //example of a for loop
-    for (i in range) println(i)
+    //for loop
+    for (i in array) {
+        println(i)
+    }
 
-    //example of a for loop
-    range.forEach { println(it) }
-    range2.forEach { println(it) }
+    //for loop with index
+    for (i in array.indices) {
+        println(array[i])
+    }
 
-    //example of a while loop
-    var x = 0
-    while (x < 10) {
-        println(x)
-        x++
+    //for loop with index and value
+    for ((index, value) in array.withIndex()) {
+        println("index: $index, value: $value")
+    }
+
+    //while loop
+    var i = 0
+    while (i < array.size) {
+        println(array[i])
+        i++
+    }
+
+    //do while loop
+    var j = 0
+    do {
+        println(array[j])
+        j++
+    } while (j < array.size)
+
+    //for loop with range
+    for (i in 1..10) {
+        println(i)
+    }
+
+    //for loop with range and step
+    for (i in 1..10 step 2) {
+        println(i)
+    }
+
+    //for loop with range and step
+    for (i in 10 downTo 1 step 2) {
+        println(i)
+    }
+
+    //for loop with range and step
+    for (i in 10 downTo 1) {
+        println(i)
+    }
+
+    //example with label and break
+    loop@ for (i in 1..10) {
+        for (j in 1..10) {
+            println("i: $i, j: $j")
+            if (i == 5 && j == 5) {
+                break@loop
+            }
+        }
     }
 }

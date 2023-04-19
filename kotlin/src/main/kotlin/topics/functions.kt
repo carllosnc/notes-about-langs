@@ -1,70 +1,42 @@
-package com.example.topics.functions
+package learn.kotlin.topics.functions
 
-//simple function
+//basic function
 fun add(a: Int, b: Int): Int {
     return a + b
 }
 
-//function with default values
-fun add(a: Int, b: Int, c: Int = 0): Int {
-    return a + b + c
+//unit returning
+fun printHello(): Unit {
+    println("Hello")
 }
 
-//function with multiples arguments
-fun add(vararg numbers: Int): Int {
-    var sum = 0
-    for (number in numbers) {
-        sum += number
-    }
-    return sum
+//single expression function
+fun sub(a: Int, b: Int) = a - b
+
+//infinite args
+fun sum(vararg numbers: Int): Int {
+    return numbers.reduce { acc, i -> acc + i }
 }
 
-//function as a single expression
-fun add(a: Int, b: Double): Double = a + b
+//functin with default value
+fun multiply(a: Int, b: Int = 1) = a * b
 
-//function that return another function
-fun add(a: Double, b: Double): (Double) -> Double {
-    return { c -> a + b + c }
-}
-
-//lambda expression
-fun lambdaExpressions(){
-    val add: (Int, Int) -> Int = { a: Int, b: Int -> a + b }
-    val sub: (Int, Int) -> Int = { a: Int, b: Int -> a - b }
-    val mul: (Int, Int) -> Int = { a, b -> a * b }
-    val div: (Int, Int) -> Int = { a, b -> a / b }
-}
-
-//function with two callbacks
-fun twoCallbacks(callback1: (Int, Int) -> Unit, callback2: (Int) -> Unit) {
-    callback1(1, 2)
-    callback2(3)
-}
-
-//example infix function
-infix fun Int.sum(a: Int): Int {
-    return this + a
-}
-
-//infix function using strings
-infix fun String.add(other: String): String {
-    return this + other
-}
+//inflix function to div 2 numbers
+infix fun Int.divBy(b: Int) = this / b
 
 fun main() {
-    //overload functions
+    //call functions
     println(add(1, 2))
-    println(add(1, 2, 3))
-    println(add(1, 2, 3, 4, 5))
-    println(add(1, 2.0))
-    println(add(1.0, 2.0)(3.0))
+    printHello()
 
-    //calling a function with two callbacks
-    twoCallbacks({ a, b -> println(a + b) }){ println(it) }
+    println(sum(1, 2, 3, 4, 5))
 
-    //call infix function
-    println(1 sum 2)
+    //call with named parameters
+    println(add(a = 1, b = 2))
 
-    //call infix function using strings
-    println("Hello" add "-" add "World")
+    //call with default value
+    println(multiply(1, 2))
+
+    //call div infix function
+    println(10 divBy 2)
 }

@@ -1,8 +1,5 @@
-//hello world program
-
 namespace Patterns
 {
-
   class PersonSingleton
   {
     private static PersonSingleton? instance = null;
@@ -39,6 +36,4 @@ namespace Patterns
       return $"Name: {name}, Age: {age}";
     }
   }
-
 }
-

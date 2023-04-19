@@ -1,6 +1,5 @@
 package com.example.topics
 
-//add two numbers
 fun add(a: Int?, b: Int?): Int {
     if (a == null || b == null) {
         throw IllegalArgumentException("One of the arguments is null")
