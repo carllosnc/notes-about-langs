@@ -1,9 +1,8 @@
-//hello world
-
 namespace Topics
 {
   public class Delegates
   {
+
     public delegate int Operation(int x, int y);
 
     //a method that accepts a delegate

@@ -1,8 +1,10 @@
-﻿namespace Learn
+//some example using in, out and ref
+
+namespace In_Out_Ref
 {
   class Program
   {
-    static void Main(string[] args)
+    static void Run(string[] args)
     {
       int a = 10;
       int b = 20;
@@ -12,14 +14,14 @@
       InMethod(in a, in b);
       Console.WriteLine("After in: a = {0}, b = {1}", a, b);
 
-      Console.WriteLine();
+      Console.WriteLine("\n");
 
       //out
       Console.WriteLine("Before out: a = {0}, b = {1}", a, b);
       OutMethod(out a, out b);
       Console.WriteLine("After out: a = {0}, b = {1}", a, b);
 
-      Console.WriteLine();
+      Console.WriteLine("\n");
 
       //ref
       Console.WriteLine("Before ref: a = {0}, b = {1}", a, b);

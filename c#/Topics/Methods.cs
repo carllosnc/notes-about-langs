@@ -60,7 +60,7 @@ namespace Topics
       return x + y + z;
     }
 
-    //create a method that accepts a callback
+    //callback
     public void Process(int x, int y, Action<int, int> callback)
     {
       callback(x, y);

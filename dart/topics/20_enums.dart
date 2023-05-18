@@ -1,4 +1,12 @@
-enum Days { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
+enum Days {
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
+}
 
 enum Color {
   red('red'),

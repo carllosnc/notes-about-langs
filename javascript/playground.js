@@ -1,12 +1,4 @@
-import fetch from 'node-fetch'
+console.log([1, 2] === [1, 2])
 
-// Criar um método que vai cacher nossas requisições, ou seja, a requsição será
-// feita um vez salva dentro da clousure, caso a requisição seja chamanda novamente
-// a nossa função retornará o valor que já foi salvo internamente
+console.log([1, 2].sort().toString() === [1,2].sort().toString())
 
-// Ferramentas e recursos
-// - AVA test runner
-// - closures
-// - map
-
-function GET(url) {}

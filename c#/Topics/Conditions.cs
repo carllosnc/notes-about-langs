@@ -1,8 +1,25 @@
 namespace Topics
 {
-  class Program
+  class Conditions
   {
-    static void Conditions(string[] args)
+    public enum Operations
+    {
+      Add,
+      Subtract,
+      Multiply,
+      Divide
+    }
+
+    static int calc(Operations op, int x, int y) => op switch
+    {
+      Operations.Add => x + y,
+      Operations.Subtract => x - y,
+      Operations.Multiply => x * y,
+      Operations.Divide => x / y,
+      _ => throw new ArgumentException("invalid operation")
+    };
+
+    static void run(string[] args)
     {
       int x = 10;
 
@@ -31,7 +48,7 @@ namespace Topics
       bool d = b || c;
       bool e = b && c;
 
-      //switch
+      //switch/case
       switch (x)
       {
         case 0:
@@ -44,6 +61,11 @@ namespace Topics
           System.Console.WriteLine("x is not zero or one");
           break;
       }
+
+      System.Console.WriteLine(calc(Operations.Add, 1, 2));
+      System.Console.WriteLine(calc(Operations.Subtract, 1, 2));
+      System.Console.WriteLine(calc(Operations.Multiply, 1, 2));
+      System.Console.WriteLine(calc(Operations.Divide, 1, 2));
     }
   }
 }
