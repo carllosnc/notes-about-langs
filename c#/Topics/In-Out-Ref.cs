@@ -1,5 +1,3 @@
-//some example using in, out and ref
-
 namespace In_Out_Ref
 {
   class Program

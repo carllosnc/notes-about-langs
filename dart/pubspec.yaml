@@ -2,9 +2,12 @@ name: learn_dart
 dependencies:
   dio: ^4.0.6
   test: ^1.9.4
-  dart_inquirer: ^1.0.0
   http: ^0.13.5
   dcli: ^1.36.0
 
+analyzer:
+  enable-experiment:
+    - records
+
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: '^3.0.0'

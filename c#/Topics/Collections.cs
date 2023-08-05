@@ -3,9 +3,9 @@ namespace Topics
   class Collections
   {
     // arrays
-    void arrays()
+    private void Arrays()
     {
-      int[] a1 = new int[10];
+      int[] a1 = new int[] { 1, 2, 3, 4, 5 };
 
       //foreach the array
       foreach (int i in a1)
@@ -30,9 +30,9 @@ namespace Topics
     }
 
     // lists
-    void lists()
+    private void Lists()
     {
-      List<int> l1 = new List<int>();
+      List<int> l1 = new List<int>() { 1, 2, 3 };
 
       //foreach the list
       foreach (int i in l1)
@@ -57,7 +57,7 @@ namespace Topics
     }
 
     // dictionaries
-    void dictionaries()
+    private void Dictionaries()
     {
       Dictionary<int, string> d1 = new Dictionary<int, string>();
 
@@ -84,7 +84,7 @@ namespace Topics
     }
 
     // sets
-    void sets()
+    private void Sets()
     {
       HashSet<int> s1 = new HashSet<int>();
 
@@ -109,5 +109,6 @@ namespace Topics
       //sort descending the set
       HashSet<int> s6 = s1.OrderByDescending(i => i).ToHashSet();
     }
+
   }
 }

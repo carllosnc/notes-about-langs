@@ -5,50 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="701d5a6d-b806-4bf5-8b95-b4aa67bd6a34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/topics/Conditions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/topics/Exceptions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/topics/Lambdas.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/topics/Types.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c#/Patterns/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Patterns/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c#/Topics/Loops.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Loops.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/AsyncPrograming.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/AsyncPrograming.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Collections.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Collections.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Conditions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Conditions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/In-Out-Ref.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/In-Out-Ref.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Nullish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Nullish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Polymophism.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Polymophism.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dart/playground.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../dart/playground.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dart/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../dart/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dart/topics/06_control-flow.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../dart/topics/06_control-flow.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javascript/playground.js" beforeDir="false" afterPath="$PROJECT_DIR$/../javascript/playground.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-kotlin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/check-cast.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/constructors.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/data-classes.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/delegation.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/extension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/inheritance.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/inner-classes.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/interfaces.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/object-expression.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/operator-overload.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/sealed-classes.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/classes/type-aliases.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/collections.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/control-flow.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/examples/fetch-data.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/topics/functions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/loops.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/topics/loops.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/null-safety.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/primitive-types.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/strings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/topics/strings.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics/variables.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript/playground.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/playground.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript/topics/10_namespaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../typescript/topics/10_namespaces.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

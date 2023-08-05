@@ -1,4 +1,9 @@
-console.log([1, 2] === [1, 2])
+function arrayReduce(array, reducer, init) {
+  let prev = init
 
-console.log([1, 2].sort().toString() === [1,2].sort().toString())
+  for (let index = 0; index < array.length; index++) {
+    prev = reducer(prev, array[index], index, array)
+  }
 
+  return prev
+}

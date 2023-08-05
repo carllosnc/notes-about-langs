@@ -10,7 +10,7 @@ namespace Topics
       Divide
     }
 
-    static int calc(Operations op, int x, int y) => op switch
+    static int Calc(Operations op, int x, int y) => op switch
     {
       Operations.Add => x + y,
       Operations.Subtract => x - y,
@@ -62,10 +62,10 @@ namespace Topics
           break;
       }
 
-      System.Console.WriteLine(calc(Operations.Add, 1, 2));
-      System.Console.WriteLine(calc(Operations.Subtract, 1, 2));
-      System.Console.WriteLine(calc(Operations.Multiply, 1, 2));
-      System.Console.WriteLine(calc(Operations.Divide, 1, 2));
+      System.Console.WriteLine(Calc(Operations.Add, 1, 2));
+      System.Console.WriteLine(Calc(Operations.Subtract, 1, 2));
+      System.Console.WriteLine(Calc(Operations.Multiply, 1, 2));
+      System.Console.WriteLine(Calc(Operations.Divide, 1, 2));
     }
   }
 }

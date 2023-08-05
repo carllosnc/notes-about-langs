@@ -5,13 +5,16 @@
 */
 
 main(List<String> args) {
-  // if and else
-  if (false) {
-    print('if');
-  } else if (true) {
-    print('else is');
+  //control flow example
+  var a = 10;
+  var b = 5;
+
+  if (a > b) {
+    print('a is greater than b');
+  } else if (a < b) {
+    print('a is less than b');
   } else {
-    print('else');
+    print('a is equal to b');
   }
 
   // switch
