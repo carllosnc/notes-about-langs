@@ -5,18 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="701d5a6d-b806-4bf5-8b95-b4aa67bd6a34" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../c#/Patterns/DependencyInjection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Patterns/Singleton.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../c#/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c#/Topics/AsyncPrograming.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/AsyncPrograming.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c#/Topics/Collections.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Collections.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c#/Topics/Conditions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Conditions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c#/Topics/In-Out-Ref.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/In-Out-Ref.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c#/Topics/Nullish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Nullish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c#/Topics/Polymophism.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Topics/Polymophism.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Tips/Crawler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../c#/Tips/Crawler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Tips/Request.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/AsyncPrograming.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Collections.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Conditions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Constructors.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Delegates.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Enums.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/ErrorHandling.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/In-Out-Ref.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Interfaces.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Lambda.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Loops.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Methods.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Nullish.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Polymophism.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Strings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/TypeCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Types.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c#/Topics/Using.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dart/playground.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../dart/playground.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dart/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../dart/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dart/topics/06_control-flow.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../dart/topics/06_control-flow.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javascript/playground.js" beforeDir="false" afterPath="$PROJECT_DIR$/../javascript/playground.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

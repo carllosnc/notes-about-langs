@@ -1,15 +1,29 @@
+import 'dart:convert';
+
+class Pessoa {
+  String nome;
+  int idade;
+
+  Pessoa(this.nome, this.idade);
+
+  Pessoa.fromJson(Map<String, dynamic> json)
+      : nome = json['nome'],
+        idade = json['idade'];
+
+  Map<String, dynamic> toJson() => {
+        "nome": nome,
+        "idade": idade,
+      };
+}
+
 void main(List<String> args) {
-  var json = {
-    'name': 'Dart',
-    'type': 'Programming Language',
-    'version': 2.12,
-  };
+  var p1 = Pessoa('John', 10);
 
-  var {'name': name, 'type': type, 'version': version} = json;
+  var items = [
+    p1.toJson().toString(),
+    p1.toJson().toString(),
+    p1.toJson().toString(),
+  ].toList().toList();
 
-  name = 'Dart 2.12';
-
-  print(name);
-  print(type);
-  print(version);
+  print(json.encode(items));
 }

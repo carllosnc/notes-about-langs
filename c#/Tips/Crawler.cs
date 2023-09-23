@@ -4,16 +4,16 @@ namespace Tips;
 
 public class Crawler
 {
-  public static async Task run()
+  public static async Task Run()
   {
-    HttpClient client = new HttpClient();
+    HttpClient client = new();
 
     HttpResponseMessage response = await client.GetAsync("https://www.lipsum.com/");
     response.EnsureSuccessStatusCode();
 
-    String responseBody = await response.Content.ReadAsStringAsync();
+    string responseBody = await response.Content.ReadAsStringAsync();
 
-    HtmlDocument doc = new HtmlDocument();
+    HtmlDocument doc = new();
     doc.LoadHtml(responseBody);
     HtmlNode h1node = doc.DocumentNode.SelectSingleNode("//h1");
 

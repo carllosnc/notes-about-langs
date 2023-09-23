@@ -20,11 +20,11 @@ https://www.typescriptlang.org/docs/handbook/enums.html
     Yes = 1,
   }
 
-  let up: Direction = Direction.Up
-  let yes: Response = Response.Yes
+  let up: Direction = Direction.Up;
+  let yes: Response = Response.Yes;
 
-  console.log(up) // 1
-  console.log(yes) // 1
+  console.log(up); // 1
+  console.log(yes); // 1
 }
 
 /*---------------------------------------
@@ -32,13 +32,13 @@ https://www.typescriptlang.org/docs/handbook/enums.html
 ----------------------------------------*/
 {
   enum Direction {
-    Up = 'UP',
-    Down = 'DOWN',
-    Left = 'LEFT',
-    Right = 'RIGHT',
+    Up = "UP",
+    Down = "DOWN",
+    Left = "LEFT",
+    Right = "RIGHT",
   }
 
-  console.log(Direction.Down)
+  console.log(Direction.Down);
 }
 
 /*---------------------------------------
@@ -47,10 +47,10 @@ https://www.typescriptlang.org/docs/handbook/enums.html
 {
   enum Multi {
     No = 0,
-    Yes = 'YES',
+    Yes = "YES",
   }
 
-  console.log(Multi.No)
+  console.log(Multi.No);
 }
 
 /*---------------------------------------
@@ -64,7 +64,7 @@ https://www.typescriptlang.org/docs/handbook/enums.html
     Z,
   }
 
-  console.log(E.X)
-  console.log(E.Y)
-  console.log(E.Z)
+  console.log(E.X);
+  console.log(E.Y);
+  console.log(E.Z);
 }
