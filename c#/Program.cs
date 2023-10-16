@@ -1,11 +1,28 @@
-﻿namespace Learn
+﻿using Math;
+
+class Person
 {
+    public string Name { get; set; }
+    public int Age { get; set; }
 
-    class Program
+    public Person(string name, int age)
     {
-        static void Main()
-        {
+        Name = name;
+        Age = age;
+    }
 
-        }
+    static Person()
+    {
+        Console.WriteLine("Static constructor");
+    }
+
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Person p = new("John", 30);
+        //Static constructor
     }
 }

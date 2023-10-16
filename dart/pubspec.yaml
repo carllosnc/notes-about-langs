@@ -4,6 +4,7 @@ dependencies:
   test: ^1.9.4
   http: ^0.13.5
   dcli: ^1.36.0
+  intl: 0.18.1
 
 analyzer:
   enable-experiment:

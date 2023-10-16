@@ -1,29 +1,13 @@
-import 'dart:convert';
+import 'package:intl/intl.dart';
 
-class Pessoa {
-  String nome;
-  int idade;
+void main() {
+  var now = DateTime.now();
 
-  Pessoa(this.nome, this.idade);
-
-  Pessoa.fromJson(Map<String, dynamic> json)
-      : nome = json['nome'],
-        idade = json['idade'];
-
-  Map<String, dynamic> toJson() => {
-        "nome": nome,
-        "idade": idade,
-      };
-}
-
-void main(List<String> args) {
-  var p1 = Pessoa('John', 10);
-
-  var items = [
-    p1.toJson().toString(),
-    p1.toJson().toString(),
-    p1.toJson().toString(),
-  ].toList().toList();
-
-  print(json.encode(items));
+  DateFormat.MMMMd().format(now); // July 10
+  DateFormat.yMMMMd().format(now); // July 10, 2019
+  DateFormat.yMd().format(now); // 7/10/2019
+  DateFormat('EEEE, d MMMM, yyyy').format(now); // Wednesday, 10 July, 2019
+  DateFormat('kk:mm:ss').format(now); // 14:18:02
+  DateFormat('hh:mm a').format(now); // 02:18 PM
+  DateFormat('yyyy-MM-dd – kk:mm').format(now); // 2019-07-10 – 14:18
 }
