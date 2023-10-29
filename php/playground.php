@@ -1,9 +1,31 @@
 <?php
 
-$list = [6, -2, 2, -7];
+trait Name
+{
+    public function printName()
+    {
+        echo $this->name;
+    }
+}
 
-sort($list);
+class Person
+{
+    use Name;
 
-foreach ($list as $item) {
-    echo($item . ',');
-};
+    public $name;
+    public $age;
+
+    public function __construct($name, $age)
+    {
+        $this->name = $name;
+        $this->age = $age;
+    }
+
+    public function introduce()
+    {
+        return "Hello my name is {$this->name} and I am {$this->age} years old";
+    }
+}
+
+$person = new Person('John', 42);
+$person->printName();
