@@ -30,7 +30,7 @@ String asciiCharType(int char) {
     >= 65 && <= 90 => 'Upper Case',
     >= 97 && <= 122 => 'Lower Case',
     >= 48 && <= 57 => 'Digit',
-    _ => 'Special Character'
+    _ => 'Special Character',
   };
 }
 

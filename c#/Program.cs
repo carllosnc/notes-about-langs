@@ -1,28 +1,27 @@
-﻿using Math;
-
-class Person
+﻿namespace App
 {
-    public string Name { get; set; }
-    public int Age { get; set; }
-
-    public Person(string name, int age)
+    class Person
     {
-        Name = name;
-        Age = age;
+        public string Name { get; set; }
+        public int Age { get; set; }
+
+        public Person(string name, int age)
+        {
+            Name = name;
+            Age = age;
+        }
     }
 
-    static Person()
+    class Program
     {
-        Console.WriteLine("Static constructor");
-    }
+        static void Main(string[] args)
+        {
+            var person = new Person(
+                name: "John",
+                age: 30
+            );
 
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Person p = new("John", 30);
-        //Static constructor
+            Console.WriteLine(person.Name);
+        }
     }
 }

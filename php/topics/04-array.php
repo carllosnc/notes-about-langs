@@ -26,3 +26,14 @@ declare(strict_types=1);
         echo "Array map -> $element" . "\n";
     }, $elements);
 }
+
+// filter array
+{
+    $elements = array_filter($elements, function ($element) {
+        return $element === "primeiro";
+    });
+
+    foreach ($elements as $value) {
+        echo "$value \n";
+    }
+}

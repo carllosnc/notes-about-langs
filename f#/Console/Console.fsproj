@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Topics\Conditional.fs" />
+    <Compile Include="Topics\Type.fs" />
+    <Compile Include="Topics\Sequences.fs" />
+    <Compile Include="Library\Library.fs" />
+    <Compile Include="Topics\PatternMatching.fs" />
+    <Compile Include="Topics\Pipes.fs" />
+    <Compile Include="Topics\Functions.fs" />
+    <Compile Include="Topics\Lists.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+</Project>

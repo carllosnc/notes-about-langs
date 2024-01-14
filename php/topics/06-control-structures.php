@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 // if/else
-
 {
     if (true) {
         echo "condition 1 \n";
@@ -57,4 +56,16 @@ declare(strict_types=1);
     $b = "Does print\n";
     echo $a ?? "a is not set\n";
     echo $b ?? "b is not set\n";
+}
+
+// patter matching
+{
+    $x = 10;
+    $y = 3;
+
+    match ($x <=> $y) {
+        0 => print "x equals y\n",
+        1 => print "x is greater than y\n",
+        -1 => print "x is less than y\n",
+    };
 }

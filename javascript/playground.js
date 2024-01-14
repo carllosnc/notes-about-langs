@@ -1,9 +1,14 @@
-function arrayReduce(array, reducer, init) {
-  let prev = init
-
-  for (let index = 0; index < array.length; index++) {
-    prev = reducer(prev, array[index], index, array)
+function loop(init, end, action){
+  if (init >= end) {
+    return true
   }
 
-  return prev
+  action(init)
+
+  loop(init + 1, end, action)
 }
+
+loop(0, 10, (index) => {
+  console.log(index, 'Hello world!')
+})
+

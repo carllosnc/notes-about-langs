@@ -7,17 +7,17 @@ $b = '0';
 $c = '1';
 $d = '1';
 
-assert($a == $b);
-assert($c != $a);
-assert($c <> $a);
-assert($a < $c);
-assert($a <= $b);
-assert($c >= $d);
+echo assert($a == $b);
+echo assert($c != $a);
+echo assert($c <> $a);
+echo assert($a < $c);
+echo assert($a <= $b);
+echo assert($c >= $d);
 
-assert($c === $d);
-assert($a !== $d);
-assert(1 === '1');
-assert(1 !== '1');
+echo assert($c === $d);
+echo assert($a !== $d);
+echo assert(1 === '1');
+echo assert(1 !== '1');
 
 $a = 100;
 $b = 1000;

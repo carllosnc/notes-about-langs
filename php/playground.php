@@ -1,31 +1,39 @@
 <?php
 
-trait Name
+declare(strict_types=1);
+
+trait HexColors
 {
-    public function printName()
+    public function getHexColor(): string
     {
-        echo $this->name;
+        return match ($this) {
+            Colors::RED => "#FF0000",
+            Colors::GREEN => "#00FF00",
+            Colors::BLUE => "#0000FF",
+            default => "#000000",
+        };
+    }
+
+    public function getRgbColor(): string
+    {
+        return match ($this) {
+            Colors::RED => "rgb(255, 0, 0)",
+            Colors::GREEN => "rgb(0, 255, 0)",
+            Colors::BLUE => "rgb(0, 0, 255)",
+            default => "rgb(0, 0, 0)",
+        };
     }
 }
 
-class Person
+enum Colors: string
 {
-    use Name;
+    use HexColors;
 
-    public $name;
-    public $age;
-
-    public function __construct($name, $age)
-    {
-        $this->name = $name;
-        $this->age = $age;
-    }
-
-    public function introduce()
-    {
-        return "Hello my name is {$this->name} and I am {$this->age} years old";
-    }
+    case RED = "red";
+    case GREEN = "green";
+    case BLUE = "blue";
 }
 
-$person = new Person('John', 42);
-$person->printName();
+$red = Colors::RED;
+echo $red->getHexColor(); // #FF0000
+echo $red->getRgbColor(); // rgb(255, 0, 0)
