@@ -15,9 +15,7 @@ declare(strict_types=1);
     print("dif " . dif(10, 20) . "\n");
     print("mult " . mult(10, 20) . "\n");
     print("div " . div(10, 20) . "\n");
-}
-
-{
+} {
     $foo = require "../lib/resources.php";
 
     var_dump($resources);

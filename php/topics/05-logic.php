@@ -7,21 +7,21 @@ $b = '0';
 $c = '1';
 $d = '1';
 
-echo assert($a == $b);
-echo assert($c != $a);
-echo assert($c <> $a);
-echo assert($a < $c);
-echo assert($a <= $b);
-echo assert($c >= $d);
+assert($a == $b); // false
+assert($c != $a); // true
+assert($c <> $a); // true
+assert($a < $c);  // true
+assert($a <= $b); // true
+assert($c >= $d); // true
 
-echo assert($c === $d);
-echo assert($a !== $d);
-echo assert(1 === '1');
-echo assert(1 !== '1');
+assert($c === $d); // true
+assert($a !== $d); // true
+assert(1 === '1'); // false
+assert(1 !== '1'); // true
 
 $a = 100;
 $b = 1000;
 
-echo $a <=> $a; // 0 since they are equal
-echo $a <=> $b; // -1 since $a < $b
-echo $b <=> $a; // 1 since $b > $a
+$a <=> $a; // 0 since they are equal
+$a <=> $b; // -1 since $a < $b
+$b <=> $a; // 1 since $b > $a

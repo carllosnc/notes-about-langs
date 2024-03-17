@@ -1,31 +1,35 @@
-//class animal
-class Animal {
-  String name;
-  Animal(this.name);
-  void eat() => print('$name is eating');
-}
-
-//mixin swim
+//mixin example
 mixin Swimmer {
   void swim() => print('Swimming');
 }
 
-//class dolphin who extends animal and implements swim
-class Dolphin extends Animal with Swimmer {
-  Dolphin(String name) : super(name);
+//mixin with properties
+mixin Flyer {
+  int age = 0;
+  void fly() => print('Flying');
 }
 
-//class fish who extends animal and implements swim
-class Fish extends Animal with Swimmer {
-  Fish(String name) : super(name);
+//mixin with methods
+mixin Runner {
+  void run() => print('Running');
+  void runFor(int distance) => print('Running for $distance meters');
 }
 
-void main(List<String> args) {
-  final flipper = Dolphin('Flipper');
-  flipper.eat();
-  flipper.swim();
+//mixin with abstract methods
+mixin Jumper {
+  void jump() => print('Jumping');
+  void jumpOver(int distance);
+}
 
-  final nemo = Fish('Nemo');
-  nemo.eat();
-  nemo.swim();
+//mixin that extends another mixin
+mixin SuperJumper on Jumper {
+  void superJump() => print('Super Jumping');
+}
+
+//class that use mixins
+class Animal with Swimmer, Flyer, Runner, Jumper, SuperJumper {
+  String name;
+  Animal(this.name);
+  void eat() => print('$name is eating');
+  void jumpOver(int distance) => print('$name is jumping over $distance meters');
 }

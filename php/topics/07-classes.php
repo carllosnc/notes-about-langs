@@ -71,11 +71,11 @@ class Person extends Master implements Info
     public function getInfo()
     {
         return array(
-      "nome" => $this->nome,
-      "lastName" => $this->lastName,
-      "email" => $this->email,
-      "lang" => $this->lang
-    );
+            "nome" => $this->nome,
+            "lastName" => $this->lastName,
+            "email" => $this->email,
+            "lang" => $this->lang
+        );
     }
 
     // getters and setters

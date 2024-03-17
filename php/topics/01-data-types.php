@@ -18,7 +18,6 @@ declare(strict_types=1);
 }
 
 // float
-
 {
     $float1 = 1.1234;
     $float2 = 1.2e3;
@@ -59,12 +58,12 @@ declare(strict_types=1);
     $_null = null;
     $_resource = tmpfile();
 
-    echo gettype($_number)."\n";
-    echo gettype($_string)."\n";
-    echo gettype($_boolean)."\n";
-    echo gettype($_double)."\n";
-    echo gettype($_array)."\n";
-    echo gettype($_object)."\n";
-    echo gettype($_null)."\n";
-    echo gettype($_resource)."\n";
+    echo gettype($_number) . "\n";
+    echo gettype($_string) . "\n";
+    echo gettype($_boolean) . "\n";
+    echo gettype($_double) . "\n";
+    echo gettype($_array) . "\n";
+    echo gettype($_object) . "\n";
+    echo gettype($_null) . "\n";
+    echo gettype($_resource) . "\n";
 }

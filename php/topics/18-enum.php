@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-{
+declare(strict_types=1); {
     enum status: string
     {
         case PENDING = 'pending';
@@ -15,17 +13,17 @@ declare(strict_types=1);
     echo status::PUBLISHED->name . "\n";
     echo status::STARRED->name . "\n";
     echo status::DENIED->name . "\n";
-}
-
-{
-    enum Color {
+} {
+    enum Color
+    {
         case Red;
         case Green;
         case Blue;
     }
 
-    function printColor(Color $color) {
-        match($color) {
+    function printColor(Color $color)
+    {
+        match ($color) {
             Color::Red => print("Red \n"),
             Color::Green => print("Green \n"),
             Color::Blue => print("Blue \n"),
@@ -35,19 +33,18 @@ declare(strict_types=1);
     printColor(Color::Red);
     printColor(Color::Green);
     printColor(Color::Blue);
-}
-
-{
-
+} {
     //enum with function inside
-    enum Color {
+    enum Color
+    {
         case Red;
         case Green;
         case Blue;
         case Purple;
 
-        public function printColor() {
-            match($this) {
+        public function printColor()
+        {
+            match ($this) {
                 Color::Red => print("😡 Color: Red \n"),
                 Color::Green => print("🤢 Color: Green \n"),
                 Color::Blue => print("🥶 Color: Blue \n"),
@@ -55,5 +52,4 @@ declare(strict_types=1);
             };
         }
     }
-
 }

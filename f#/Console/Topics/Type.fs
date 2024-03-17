@@ -23,10 +23,11 @@ let person =
     { Name = "John"
       Age = 30
       Vehicle =
-        Car
-            { Make = "Ford"
+        Car { Make = "Ford"
               Model = "Focus"
-              Year = 2010 } }
+              Year = 2010
+            }
+    }
 
 match person.Vehicle with
 | Car _ -> printfn "Car"

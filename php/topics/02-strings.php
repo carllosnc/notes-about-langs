@@ -8,6 +8,7 @@ declare(strict_types=1);
     $double_quotes = "String -> $single_quotes"; // String -> $string
 }
 
+// double quotes allow for escape sequences
 {
     $escaped = "This contain a \t tab character";
     $uncaped = "This contains a slash and a t: \t";
@@ -16,8 +17,8 @@ declare(strict_types=1);
 // enclose a variable
 {
     $apples = "I have {$number} apples to eat";
-    $oranges = "I have ${number} oranges to eat";
-    $money = "I have $${number} in the bank";
+    $oranges = "I have {$number} oranges to eat";
+    $money = "I have {$number} in the bank";
 }
 
 // since php 5.3, newdocs can be used for uniterpolated multi-liners

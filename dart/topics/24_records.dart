@@ -1,7 +1,6 @@
 //destruct and set record
 setRecord() {
-  ({String? foo, String? bar, String? span}) r1 =
-      (foo: null, bar: null, span: null);
+  ({String? foo, String? bar, String? span}) r1 = (foo: null, bar: null, span: null);
 
   var (:foo, :bar, :span) = r1;
 

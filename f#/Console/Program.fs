@@ -1,10 +1,9 @@
-﻿open System
+﻿let add x y = x + y
 
-let (|Digit|Letter|Whitespace|Other|) ch =
-    if Char.IsDigit ch then Digit
-    elif Char.IsLetter ch then Letter
-    elif Char.IsWhiteSpace ch then Whitespace
-    else Other
+let subtract x y = x - y
 
-type Red = Red
-type Green = Green
+let multiply x y = x * y
+
+let divide x y = x / y
+
+printfn "The sum of 10 and 5 is %d" (add 10 5)

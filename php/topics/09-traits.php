@@ -46,12 +46,12 @@ trait Comunication
     }
 }
 
-class People
+class Person
 {
     use Comunication;
 
     private $name;
-    private $classType = "<Class People>";
+    private $classType = "<Class Person>";
 
     public function __construct(String $name)
     {
@@ -59,20 +59,18 @@ class People
     }
 }
 
-$bob = new People("Bob");
+$bob = new Person("Bob");
 
 var_dump($bob);
 
 // Calling the trait
-
 $bob->sayMyName();
 $bob->name = "Jack";
 echo "Call the object - " . $bob->name . "\n";
 echo "Call the object - " . $bob->getClassType() . "\n";
-echo "Call the object - " . People::getBaseTrait() . "\n";
-echo "Call the object - " . People::$type . "\n";
+echo "Call the object - " . Person::getBaseTrait() . "\n";
+echo "Call the object - " . Person::$type . "\n";
 
 // Calling the trait
-
 echo "Call the trait - " . Base::$type . "\n";
 echo "Call the trait - " . Base::getBaseTrait() . "\n";

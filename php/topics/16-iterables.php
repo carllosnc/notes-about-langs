@@ -11,9 +11,9 @@ function foo(iterable $iterable)
 }
 
 foo([
-  'first' => 'primeiro',
-  'second' => 'segundo',
-  'third' => 'terceiro'
+    'first' => 'primeiro',
+    'second' => 'segundo',
+    'third' => 'terceiro'
 ]);
 
 // function type
