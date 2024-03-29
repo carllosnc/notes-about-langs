@@ -1,13 +1,29 @@
 type Button = {
-  text: string;
-  onClick: (e: MouseEvent) => void;
+  name: string;
+  onClick: () => void;
 };
+
+type Input = {
+  value: string;
+  onChange: (value: string) => void;
+};
+
+function App(element: Button | Input) {
+  if ("onClick" in element) {
+    element.onClick();
+  } else {
+    element.onChange("Hello");
+  }
+}
 
 const button: Button = {
-  text: "Click me",
-  onClick: (e) => {
-    console.log("Clicked");
-  },
+  name: "Click me",
+  onClick: () => console.log("Button clicked"),
 };
 
-console.log(typeof button);
+const input: Input = {
+  value: "",
+  onChange: (value) => console.log(value),
+};
+
+App(button); // Button clicked
