@@ -2,7 +2,7 @@
 
 # Notes about DART
 
-👉 [Topics](https://github.com/C4co/dart-notes/tree/master/topics)
+👉 [Topics](https://github.com/carllosnc/dart-notes/tree/master/topics)
 
 ### Resources
 + [Oficial Doc](https://www.dartlang.org/)
