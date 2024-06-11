@@ -1,28 +1,15 @@
-function loop(times){
-  var index = 0;
+let arr = [1, 2, 3, 4, 5];
 
-  function rec(action){
-    index++;
+//foreach - undefined
+//map - length
+//filter - 0 ~ length
 
-    if(index <= times){
-      action(index - 1)
-      rec(action);
-    }
+let a = arr.reduce((prev, next) => {
+  if (next % 2 === 0) {
+    return prev.concat(next);
   }
 
-  return rec;
-}
+  return prev;
+}, []);
 
-let arr = [
-  "first",
-  "second",
-  "third",
-  "fourth",
-  "fifth",
-  "sixth",
-]
-
-loop(arr.length)((index) => {
-  console.log(index, arr[index])
-});
-
+console.log(a);

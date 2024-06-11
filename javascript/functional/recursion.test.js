@@ -2,7 +2,6 @@ import test from 'ava'
 
 test('recursion', t => {
   function loop(init, end, action) {
-    // condition to end loop
     if (init >= end) {
       return true
     }
