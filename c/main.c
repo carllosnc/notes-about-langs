@@ -4,5 +4,5 @@
 
 int main(void)
 {
-  //
+  printf("Let's work more about C lang\n");
 }

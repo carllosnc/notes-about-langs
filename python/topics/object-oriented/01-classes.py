@@ -10,7 +10,7 @@ print(p1.x)
 
 # __init__ function
 class Person1:
-    def __init__(self, name, age):
+    def __init__(self, name, age): # type: ignore
         self.name = name
         self.age = age
 
@@ -26,11 +26,11 @@ print(p1.age)
 
 # the self parameter
 class Person2:
-    def __init__(SELF, name, age):
+    def __init__(SELF, name, age): # type: ignore
         SELF.name = name
         SELF.age = age
 
-    def myfunc(SELF):
+    def myfunc(SELF): # type: ignore
         print('hello my name is ' + SELF.name)
 
 

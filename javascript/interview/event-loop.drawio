@@ -1,0 +1,54 @@
+<mxfile host="65bd71144e">
+    <diagram id="cTkwapL6Xqapb_IdOOZE" name="Page-1">
+        <mxGraphModel dx="803" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" value="Call stack" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="90" width="280" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Web APIs" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="90" width="280" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Microtasks" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="360" width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;fontSize=20;" parent="1" source="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="550" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="Macrotasks" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="500" width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.reload;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="450" width="94" height="105.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="EVENT LOOP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="160.5" y="390" width="153" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="DOM" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" parent="1" vertex="1">
+                    <mxGeometry x="437.5" y="120" width="122.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="GEO" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" parent="1" vertex="1">
+                    <mxGeometry x="572.5" y="120" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="SET TIME OUT" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" parent="1" vertex="1">
+                    <mxGeometry x="437.5" y="160" width="225" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="LOCAL STORAGE" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="240" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="INDEX DB" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="280" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="promises, async, queue microtasks, mutationObserver" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="440" width="450" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="setTimeout, setInterval" style="rounded=0;html=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="580" width="390" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

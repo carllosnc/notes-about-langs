@@ -1,9 +1,11 @@
--- a simple array
-local a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }
+local co = coroutine.create(function()
+  print("Hello, world!")
+  coroutine.yield()
+  print("Hello, again!")
+end)
 
---print index
-for i = 1, #a do
-  print(a[i])
-end
-
-print(a[1])
+print("Before starting coroutine")
+coroutine.resume(co)
+print("After first resume")
+coroutine.resume(co)
+print("After second resume")

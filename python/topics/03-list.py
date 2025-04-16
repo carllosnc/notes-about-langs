@@ -14,7 +14,7 @@ print(ord1 == ord2)  # false
 
 # lists can contain arbitrary objects
 
-arb = [1, "two", True, 4.32]
+arb = [1, "two", True, 4.32] # type: ignore
 
 # lists can be accessed by index
 

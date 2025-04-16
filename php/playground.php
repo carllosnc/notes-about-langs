@@ -1,12 +1,19 @@
 <?php
 
-require 'file.php';
+function getOpenGraphImage($url)
+{
+  $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+  curl_setopt($ch, CURLOPT_MAXREDIRS, 5);
+  curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+  $html = curl_exec($ch);
 
-use Math\Basic\Calc;
-use Math\Geometry\Triangle;
+  echo "hello world!";
+}
 
-$calc = new Calc();
-echo $calc->add(1, 2);
 
-$triangle = new Triangle();
-echo $triangle->area(3, 4);
+$websiteUrl = 'https://github.com/asdf-vm/asdf-plugins';
+$ogImage = getOpenGraphImage($websiteUrl);
+
+echo $ogImage;

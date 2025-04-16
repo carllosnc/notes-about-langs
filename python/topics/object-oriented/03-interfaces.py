@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 class NetWorkInterface(ABC):
     @abstractmethod
     def connect(self):
@@ -10,18 +9,17 @@ class NetWorkInterface(ABC):
     def transfer(self):
         pass
 
-
 class RealNetwork(NetWorkInterface):
-    def connect(self):
+    def connect(self): # type: ignore
         return 'interface connection'
 
-    def transfer(self):
+    def transfer(self): # type: ignore
         return 'interface transfer'
 
 
 class FakeNetwork(NetWorkInterface):
-    def connect(self):
+    def connect(self): # type: ignore
         return 'faker interface connection'
 
-    def transfer(self):
+    def transfer(self): # type: ignore
         return 'faker transfer'

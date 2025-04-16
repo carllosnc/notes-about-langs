@@ -1,14 +1,14 @@
-def sum(a, b):
-    return a + b
+def sum(a, b): # type: ignore
+    return a + b # type: ignore
 
 
-def sub(a, b):
-    return a - b
+def sub(a, b): # type: ignore
+    return a - b # type: ignore
 
 
-def mult(a, c):
-    return a * c
+def mult(a, c): # type: ignore
+    return a * c # type: ignore
 
 
-def div(a, c):
-    return a / c
+def div(a, c): # type: ignore
+    return a / c # type: ignore

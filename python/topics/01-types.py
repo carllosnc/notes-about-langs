@@ -16,7 +16,7 @@ complex_number = 2+3j
 print(type(complex_number))
 
 list = []
-print(type(list))
+print(type(list)) # type: ignore
 
 tuple = ()
 print(type(tuple))

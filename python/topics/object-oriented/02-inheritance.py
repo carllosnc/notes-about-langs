@@ -5,7 +5,7 @@ the methods and properties from another class
 
 
 class Person:
-    def __init__(self, fname, lname):
+    def __init__(self, fname, lname): # type: ignore
         self.firstname = fname
         self.lastname = lname
 
@@ -14,7 +14,7 @@ class Person:
 
 
 class Student(Person):
-    def __init__(self, fname, lname):
+    def __init__(self, fname, lname): # type: ignore
         super().__init__(fname, lname)
         self.graduationyear = 2019
 

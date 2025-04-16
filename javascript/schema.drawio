@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e">
+    <diagram id="QSQ4RR1Fptn6TH9ms0Op" name="Page-1">
+        <mxGraphModel dx="698" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;Call stack&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="123" y="240" width="240" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;Microstack queue&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="363" y="440" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;Macrotask queue&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="363" y="610" width="340" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.reload;fontSize=21;" parent="1" vertex="1">
+                    <mxGeometry x="198" y="510" width="71.11" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Event loop" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" parent="1" vertex="1">
+                    <mxGeometry x="178" y="620" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;fontSize=21;" parent="1" source="9" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="setTimeout, setInterval, setImediate" style="rounded=1;arcSize=9;align=left;spacingLeft=5;strokeColor=#4C9AFF;html=1;strokeWidth=2;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="428" y="700" width="210" height="33" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="process.nextTrick, promisse callback, async function, queueMicrotask&amp;nbsp;" style="rounded=1;arcSize=9;align=left;spacingLeft=5;strokeColor=#4C9AFF;html=1;strokeWidth=2;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="338" y="550" width="390" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="JAVASCRIPT RUNTIME" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" parent="1" vertex="1">
+                    <mxGeometry x="123" y="80" width="577" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;Web apis&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="240" width="303" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="ASYNC ACTION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="246" y="160" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="SYNC ACTION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="123" y="160" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="TIMER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="368" y="160" width="110" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

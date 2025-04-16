@@ -1,13 +1,5 @@
-changeName(String name) {
-  name = "new name";
-}
+import 'dart:convert';
 
-class People {
-  late String name;
-}
-
-void main(List<String> args) {
-  String name = "old name";
-  changeName(name);
-  print(name);
+main() {
+  print(jsonDecode('{"a": 1, "b": 2}').runtimeType);
 }

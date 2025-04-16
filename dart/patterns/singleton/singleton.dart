@@ -1,18 +1,18 @@
 import 'package:test/test.dart';
 
-class SingletonOne {
-  static final SingletonOne _instance = SingletonOne._();
+class Singleton {
+  static final Singleton _instance = Singleton._();
 
-  SingletonOne._();
+  Singleton._();
 
-  factory SingletonOne() {
+  factory Singleton() {
     return _instance;
   }
 }
 
 void main(List<String> args) {
-  var foo = SingletonOne();
-  var bar = SingletonOne();
+  var foo = Singleton();
+  var bar = Singleton();
 
   print(foo.hashCode);
   print(bar.hashCode);
