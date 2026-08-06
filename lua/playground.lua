@@ -1,11 +1,16 @@
-local co = coroutine.create(function()
-  print("Hello, world!")
-  coroutine.yield()
-  print("Hello, again!")
-end)
+-- it's a table
+local fruits = { "apple", "banana", "cherry" }
 
-print("Before starting coroutine")
-coroutine.resume(co)
-print("After first resume")
-coroutine.resume(co)
-print("After second resume")
+print(fruits)
+print(#fruits)
+
+local mixed = { 10, 20, nil, 40 }
+
+-- learning more about dictionaries
+local person = {
+  name = "Alice",
+  age = 30,
+  city = "New York"
+}
+
+print(person.name)

@@ -14,11 +14,9 @@ else:
 finally:
     print('Finnaly')
 
-
 # raise exceptions
 def fn():
     raise Exception('my custom exception')
-
 
 try:
     fn()
